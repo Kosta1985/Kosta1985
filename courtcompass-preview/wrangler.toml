@@ -1,0 +1,8 @@
+name = "courtcompass-au-preview"
+main = "preview.ts"
+compatibility_date = "2026-08-30"
+workers_dev = true
+
+[assets]
+directory = "."
+binding = "ASSETS"
