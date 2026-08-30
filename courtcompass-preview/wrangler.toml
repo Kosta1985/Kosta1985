@@ -4,5 +4,5 @@ compatibility_date = "2026-08-30"
 workers_dev = true
 
 [assets]
-directory = "."
+directory = "./public"
 binding = "ASSETS"
