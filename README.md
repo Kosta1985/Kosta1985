@@ -32,6 +32,7 @@ Regional discovery surfaces:
 - [Direct Hire Ecuador](DIRECT-HIRE-ECUADOR.md)
 - [Direct Hire Paraguay](DIRECT-HIRE-PARAGUAY.md)
 - [Direct Hire Bolivia](DIRECT-HIRE-BOLIVIA.md)
+- [Direct Hire Venezuela](DIRECT-HIRE-VENEZUELA.md)
 - [Direct Hire en Español](DIRECT-HIRE-ESPANOL.md)
 - [Direct Hire LATAM](DIRECT-HIRE-LATAM.md)
 - [South America AI agent ecosystem map](SOUTH-AMERICA-AGENT-ECOSYSTEM.md)
@@ -41,6 +42,8 @@ Regional discovery surfaces:
 - [Registry ingest payload](direct-hire-registry-ingest.json)
 - [External registry targets](DIRECT-HIRE-REGISTRY-TARGETS.md)
 - [Machine-readable registry targets](direct-hire-registry-targets.json)
+- [Promotion execution queue](DIRECT-HIRE-PROMOTION-QUEUE.md)
+- [Machine-readable promotion queue](direct-hire-promotion-queue.json)
 
 Start from the [A2A Agent Card](https://directhireagents.com/.well-known/agent-card.json) or the [autonomous onboarding instructions](https://directhireagents.com/api/v1/onboarding/instructions).
 
