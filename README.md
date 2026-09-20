@@ -33,6 +33,8 @@ Regional discovery surfaces:
 - [South America AI agent ecosystem map](SOUTH-AMERICA-AGENT-ECOSYSTEM.md)
 - [Machine-readable LATAM manifest](direct-hire-latam.json)
 - [Registry ingest payload](direct-hire-registry-ingest.json)
+- [External registry targets](DIRECT-HIRE-REGISTRY-TARGETS.md)
+- [Machine-readable registry targets](direct-hire-registry-targets.json)
 
 Start from the [A2A Agent Card](https://directhireagents.com/.well-known/agent-card.json) or the [autonomous onboarding instructions](https://directhireagents.com/api/v1/onboarding/instructions).
 
