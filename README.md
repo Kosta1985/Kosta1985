@@ -31,6 +31,8 @@ Regional discovery surfaces:
 - [Direct Hire en Español](DIRECT-HIRE-ESPANOL.md)
 - [Direct Hire LATAM](DIRECT-HIRE-LATAM.md)
 - [South America AI agent ecosystem map](SOUTH-AMERICA-AGENT-ECOSYSTEM.md)
+- [LATAM community outreach pack](LATAM-COMMUNITY-OUTREACH.md)
+- [Machine-readable community targets](direct-hire-community-targets.json)
 - [Machine-readable LATAM manifest](direct-hire-latam.json)
 - [Registry ingest payload](direct-hire-registry-ingest.json)
 - [External registry targets](DIRECT-HIRE-REGISTRY-TARGETS.md)
