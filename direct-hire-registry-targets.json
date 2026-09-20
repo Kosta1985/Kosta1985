@@ -1,25 +1,61 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
   "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
   "checkedAt": "2026-09-20",
+  "campaignRules": {
+    "noEmail": true,
+    "noSpam": true,
+    "noDuplicateSubmissions": true
+  },
   "targets": [
     {
       "name": "registry.ip402.xyz",
       "status": "target-not-yet-observed",
       "website": "https://registry.ip402.xyz",
-      "mcpEndpoint": "https://registry.ip402.xyz/mcp",
-      "mcpTool": "register_agent",
-      "mcpArguments": {
-        "url": "https://directhireagents.com"
-      },
-      "a2aEndpoint": "https://registry.ip402.xyz/a2a",
-      "a2aSkill": "register-agent",
-      "authRequired": false
+      "submission": {
+        "authRequired": false,
+        "mcpEndpoint": "https://registry.ip402.xyz/mcp",
+        "mcpTool": "register_agent",
+        "mcpArguments": {
+          "url": "https://directhireagents.com"
+        },
+        "a2aEndpoint": "https://registry.ip402.xyz/a2a",
+        "a2aSkill": "register-agent"
+      }
     },
     {
-      "name": "A2A Registry",
+      "name": "a2aregistry.org",
+      "status": "target-not-yet-observed",
+      "website": "https://a2aregistry.org/",
+      "submission": {
+        "method": "POST",
+        "endpoint": "https://a2aregistry.org/api/agents/register",
+        "body": {
+          "wellKnownURI": "https://directhireagents.com/.well-known/agent-card.json"
+        }
+      }
+    },
+    {
+      "name": "allagents.app",
+      "status": "target-not-yet-observed",
+      "website": "https://allagents.app/",
+      "submission": {
+        "method": "POST",
+        "endpoint": "https://allagents.app/register",
+        "authRequired": false,
+        "declaredFields": [
+          "name",
+          "specialty",
+          "description",
+          "endpoints"
+        ],
+        "note": "Fetch current documentation before submission and follow the exact endpoints field schema."
+      }
+    },
+    {
+      "name": "Global A2A Registry",
       "status": "already-listed",
       "url": "https://www.a2a-registry.org/agent/com.directhireagents.direct_hire_agent_directory"
     },
@@ -62,6 +98,13 @@
       "name": "agents.ml",
       "status": "target",
       "url": "https://agents.ml/"
+    }
+  ],
+  "excluded": [
+    {
+      "name": "GopherTools",
+      "url": "https://gophertools.dev/agents/submit/",
+      "reason": "Submission requires email; excluded by current no-email campaign rule."
     }
   ]
 }
