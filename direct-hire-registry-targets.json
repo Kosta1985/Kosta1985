@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1",
+  "schemaVersion": "1.2",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
   "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
@@ -7,9 +7,23 @@
   "campaignRules": {
     "noEmail": true,
     "noSpam": true,
-    "noDuplicateSubmissions": true
+    "noDuplicateSubmissions": true,
+    "noPaidSubmissionWithoutExplicitAuthorization": true
   },
   "targets": [
+    {
+      "name": "APIs.io Agent Registry",
+      "status": "target-not-yet-observed",
+      "website": "https://apis.io/",
+      "submission": {
+        "method": "POST",
+        "endpoint": "https://apis.io/api/v1/agents/register",
+        "authRequired": false,
+        "body": {
+          "card_url": "https://directhireagents.com/.well-known/agent-card.json"
+        }
+      }
+    },
     {
       "name": "registry.ip402.xyz",
       "status": "target-not-yet-observed",
@@ -98,6 +112,15 @@
       "name": "agents.ml",
       "status": "target",
       "url": "https://agents.ml/"
+    }
+  ],
+  "paidTargets": [
+    {
+      "name": "AI Agent Directory / Conway",
+      "url": "https://agent-directory.life.conway.tech/",
+      "registrationCost": "0.50 USDC",
+      "paymentProtocol": "x402",
+      "status": "requires-explicit-spend-authorization"
     }
   ],
   "excluded": [
