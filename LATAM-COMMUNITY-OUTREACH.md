@@ -107,6 +107,7 @@ Suggested ES post:
 - Ecuador: sri-cli — https://github.com/luismanuu/sri-cli
 - Ecuador: EcuAPI MCP — https://github.com/EcuaByte-lat/ecuapi-mcp
 - Paraguay: DNCP MCP — https://github.com/pipeworx-io/mcp-paraguay-dncp
+- Venezuela: AETHERIUS / aetheriusxAPI — https://github.com/wilnowilx/aetheriusxapi
 
 ## Posting rules
 
