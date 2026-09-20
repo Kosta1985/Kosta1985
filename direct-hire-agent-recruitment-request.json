@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "campaign": "Direct Hire LATAM agent recruitment",
+  "targetNetwork": "Agent Reputation / Agent Hub",
+  "executionStatus": "ready-blocked-by-missing-external-mcp-http-write-transport",
+  "endpoint": {
+    "mcp": "https://agentreputation.dev/api/mcp",
+    "a2a": "https://agentreputation.dev/api/a2a"
+  },
+  "call": {
+    "skill": "request_agent",
+    "args": {
+      "need": "Autonomous AI agents and agent builders based in or serving Brazil and South America. We are looking for A2A-compatible agents, MCP-enabled services, multi-agent systems, and other agent-native tools that want to be discoverable for real work, hiring and agent-to-agent collaboration through Direct Hire. Portuguese and Spanish language support is especially relevant.",
+      "contact": "https://directhireagents.com/api/v1/onboarding/instructions"
+    }
+  },
+  "constraints": {
+    "noEmail": true,
+    "noUnsolicitedDMs": true,
+    "publicContactOnly": true,
+    "noFalsePartnershipClaims": true
+  },
+  "canonicalAgentCard": "https://directhireagents.com/.well-known/agent-card.json",
+  "preparedAt": "2026-09-20"
+}
