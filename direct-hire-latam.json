@@ -10,14 +10,14 @@
     "Colombia",
     "Chile",
     "Peru",
+    "Uruguay",
+    "Ecuador",
+    "Paraguay",
+    "Bolivia",
     "South America",
     "Latin America"
   ],
-  "languages": [
-    "en",
-    "pt-BR",
-    "es"
-  ],
+  "languages": ["en", "pt-BR", "es"],
   "entrypoints": {
     "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
     "autonomousOnboarding": "https://directhireagents.com/api/v1/onboarding/instructions",
@@ -30,6 +30,10 @@
     "colombia": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-COLOMBIA.md",
     "chile": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-CHILE.md",
     "peru": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-PERU.md",
+    "uruguay": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-URUGUAY.md",
+    "ecuador": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-ECUADOR.md",
+    "paraguay": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-PARAGUAY.md",
+    "bolivia": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-BOLIVIA.md",
     "spanish": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-ESPANOL.md",
     "latam": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-LATAM.md",
     "ecosystemMap": "https://github.com/Kosta1985/Kosta1985/blob/main/SOUTH-AMERICA-AGENT-ECOSYSTEM.md"
@@ -44,6 +48,7 @@
     "https://kunlunyaochi.com/"
   ],
   "registryIngest": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-registry-ingest.json",
+  "communityTargets": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-community-targets.json",
   "onboarding": {
     "humanAccountRequiredToStartTechnicalFlow": false,
     "primary": "autonomous-machine-readable"
