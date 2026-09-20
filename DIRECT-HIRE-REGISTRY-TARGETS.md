@@ -5,12 +5,31 @@ This document is a machine-friendly promotion and registration guide for Direct 
 Primary agent URL: https://directhireagents.com  
 A2A Agent Card: https://directhireagents.com/.well-known/agent-card.json
 
-## 1. registry.ip402.xyz — target not yet observed
+## 1. APIs.io Agent Registry — target not yet observed
+
+Registry:
+https://apis.io/
+
+Registration endpoint:
+
+```text
+POST https://apis.io/api/v1/agents/register
+```
+
+Payload:
+
+```json
+{
+  "card_url": "https://directhireagents.com/.well-known/agent-card.json"
+}
+```
+
+No account, API key or form is required. The registry validates the served card and re-fetches registered cards over time.
+
+## 2. registry.ip402.xyz — target not yet observed
 
 Public A2A registry:
 https://registry.ip402.xyz
-
-The registry accepts agent registration without an account or API key and validates the live endpoint.
 
 ### Preferred MCP submission
 
@@ -36,21 +55,14 @@ https://registry.ip402.xyz/a2a
 Skill:
 `register-agent`
 
-Use the Direct Hire base URL:
-https://directhireagents.com
-
-## 2. a2aregistry.org — target not yet observed
+## 3. a2aregistry.org — target not yet observed
 
 Public registry:
 https://a2aregistry.org/
 
-Registration endpoint:
-
 ```text
 POST https://a2aregistry.org/api/agents/register
 ```
-
-Payload:
 
 ```json
 {
@@ -58,14 +70,10 @@ Payload:
 }
 ```
 
-The registry fetches the Agent Card from the supplied wellKnownURI.
-
-## 3. allagents.app — target not yet observed
+## 4. allagents.app — target not yet observed
 
 Directory:
 https://allagents.app/
-
-The public Agent Card states that listing is free, instant and accountless through:
 
 ```text
 POST https://allagents.app/register
@@ -74,53 +82,51 @@ POST https://allagents.app/register
 Declared fields:
 `name`, `specialty`, `description`, `endpoints`.
 
-Before automated submission, fetch the current documentation/Agent Card and follow its exact current field schema rather than guessing the nested `endpoints` shape.
+Before automated submission, fetch current documentation and follow the exact current nested `endpoints` schema.
 
-## 4. Global A2A Registry — already listed
+## 5. Global A2A Registry — already listed
 
 https://www.a2a-registry.org/agent/com.directhireagents.direct_hire_agent_directory
 
-Current external status may differ from other registries because each service uses its own health-check implementation.
-
-## 5. AgentHermes — already indexed
+## 6. AgentHermes — already indexed
 
 https://agenthermes.ai/registry
 
-Direct Hire is currently discoverable there as an A2A/REST business.
-
-## 6. Agent Tools Cloud — already indexed
+## 7. Agent Tools Cloud — already indexed
 
 https://agent-tools.cloud/a2a?q=self-registration
 
-Direct Hire is currently discovered and health-probed there.
-
-## 7. Agenstry — already indexed
+## 8. Agenstry — already indexed
 
 https://agenstry.com/providers/Direct%20Hire
 
-## 8. Hype Star — already listed
+## 9. Hype Star — already listed
 
 https://hypestar.org/project/direct-hire
 
-## 9. AgentLair — already observed
+## 10. AgentLair — already observed
 
 https://agentlair.dev/leaderboard/a2a
 
-## 10. Kunlun Yaochi — already observed
+## 11. Kunlun Yaochi — already observed
 
 https://kunlunyaochi.com/
 
-## 11. a2alist.ai — target
+## 12. a2alist.ai — target
 
 https://a2alist.ai/
 
-A2A/x402 directory. Direct Hire has not been observed in its current public index during the latest check.
-
-## 12. agents.ml — target
+## 13. agents.ml — target
 
 https://agents.ml/
 
-Agent profile/directory surface. Direct Hire has not been observed there during the latest check.
+## Paid target — requires explicit spend authorization
+
+### AI Agent Directory / Conway
+
+https://agent-directory.life.conway.tech/
+
+Registration uses x402 and currently advertises a 0.50 USDC registration charge. Do not spend funds without explicit owner authorization.
 
 ## Excluded from this no-email campaign
 
@@ -138,3 +144,4 @@ The submission form requires an email address, so it is intentionally excluded f
 - Do not submit duplicate records where the registry already has Direct Hire.
 - Respect each registry's rate limits and validation rules.
 - Do not use email-required submission paths in the current no-email campaign.
+- Do not incur paid registration or blockchain costs without explicit authorization.
