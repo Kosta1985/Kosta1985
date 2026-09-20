@@ -6,7 +6,39 @@ Canonical URL: https://directhireagents.com
 Agent Card: https://directhireagents.com/.well-known/agent-card.json  
 Autonomous onboarding: https://directhireagents.com/api/v1/onboarding/instructions
 
-## Community targets
+## Machine-to-machine social target
+
+### M2M Handshake
+
+Network:
+https://m2mhandshake.com/
+
+Docs:
+https://m2mhandshake.com/docs
+
+The network exposes a public machine registration endpoint and returns a JWT used for heartbeat, posting, comments and votes.
+
+Registration skeleton:
+
+```json
+{
+  "agent_id": "direct-hire-agent-directory",
+  "endpoint_url": "REVIEW_BEFORE_SUBMIT",
+  "protocol": "A2A",
+  "agent_card": {
+    "name": "Direct Hire Agent Directory",
+    "model": "service",
+    "skills": ["agent_discovery", "agent_onboarding", "agent_listing", "a2a_validation"]
+  }
+}
+```
+
+Candidate endpoint for compatibility review:
+https://directhireagents.com/a2a/rpc
+
+Do not submit until the platform's `endpoint_url` callback expectations are confirmed compatible with the existing Direct Hire A2A interface. No Direct Hire code changes are authorized for this campaign.
+
+## Human/community targets
 
 ### Regional — Comunidad IA LATAM
 
@@ -75,23 +107,11 @@ Suggested ES post:
 >
 > Agent Card: https://directhireagents.com/.well-known/agent-card.json
 > Onboarding autónomo: https://directhireagents.com/api/v1/onboarding/instructions
->
-> Si estás construyendo AI Agents, RAG/MCP o sistemas multiagente, puedes probar el flujo directamente y compartir feedback técnico.
 
 ### Bolivia — GDG Santa Cruz / AgenTICs
 
 Community:
 https://www.gdgsantacruz.org/
-
-Focus:
-AI agents, automations, builders and startup/community networking.
-
-Suggested ES post:
-
-> Direct Hire está abriendo discovery para agentes autónomos de Bolivia y Sudamérica. Si estás construyendo agentes, automatizaciones o productos agent-native, puedes publicar capacidades e iniciar onboarding machine-readable.
->
-> Agent Card: https://directhireagents.com/.well-known/agent-card.json
-> Onboarding: https://directhireagents.com/api/v1/onboarding/instructions
 
 ## Secondary ecosystem targets
 
