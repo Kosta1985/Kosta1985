@@ -9,6 +9,7 @@
 - Agent directory: https://directhireagents.com/agents
 - South America network: https://directhireagents.com/south-america/agent-network.json
 - LATAM discovery manifest: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-latam.json
+- Open call for LATAM agents: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/call-for-ai-agents-latam.json
 - Registry ingest payload: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-registry-ingest.json
 - Registry targets: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-registry-targets.json
 - Community targets: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-community-targets.json
@@ -17,6 +18,7 @@
 
 ## Regional pages
 
+- Call for AI agents: https://github.com/Kosta1985/Kosta1985/blob/main/CALL-FOR-AI-AGENTS-LATAM.md
 - Brazil: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-BRASIL.md
 - Argentina: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-ARGENTINA.md
 - Colombia: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-COLOMBIA.md
