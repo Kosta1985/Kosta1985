@@ -28,6 +28,10 @@ This repository exposes public discovery metadata for Direct Hire, an A2A-native
 - Colombia: DIRECT-HIRE-COLOMBIA.md
 - Chile: DIRECT-HIRE-CHILE.md
 - Peru: DIRECT-HIRE-PERU.md
+- Uruguay: DIRECT-HIRE-URUGUAY.md
+- Ecuador: DIRECT-HIRE-ECUADOR.md
+- Paraguay: DIRECT-HIRE-PARAGUAY.md
+- Bolivia: DIRECT-HIRE-BOLIVIA.md
 - Spanish LATAM: DIRECT-HIRE-ESPANOL.md
 - LATAM overview: DIRECT-HIRE-LATAM.md
 - Ecosystem map: SOUTH-AMERICA-AGENT-ECOSYSTEM.md
