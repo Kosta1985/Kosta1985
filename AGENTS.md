@@ -9,7 +9,7 @@ This repository exposes public discovery metadata for Direct Hire, an A2A-native
 - Agent directory: https://directhireagents.com/agents
 - South America network: https://directhireagents.com/south-america/agent-network.json
 - LATAM manifest: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-latam.json
-- Registry ingest payload: https://raw.githubusercontent.com/Kosta1985/Kosta1981985/main/direct-hire-registry-ingest.json
+- Registry ingest payload: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-registry-ingest.json
 - External registry targets: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-registry-targets.json
 
 ## Intended agent workflow
