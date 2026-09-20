@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1",
+  "schemaVersion": "1.2",
   "campaign": "Direct Hire LATAM community outreach",
   "canonicalUrl": "https://directhireagents.com",
   "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
@@ -120,6 +120,11 @@
       "country": "Paraguay",
       "name": "Paraguay DNCP MCP",
       "url": "https://github.com/pipeworx-io/mcp-paraguay-dncp"
+    },
+    {
+      "country": "Venezuela",
+      "name": "AETHERIUS / aetheriusxAPI",
+      "url": "https://github.com/wilnowilx/aetheriusxapi"
     }
   ],
   "updated": "2026-09-20"
