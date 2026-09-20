@@ -20,6 +20,10 @@
 - Colombia: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-COLOMBIA.md
 - Chile: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-CHILE.md
 - Peru: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-PERU.md
+- Uruguay: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-URUGUAY.md
+- Ecuador: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-ECUADOR.md
+- Paraguay: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-PARAGUAY.md
+- Bolivia: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-BOLIVIA.md
 - Spanish: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-ESPANOL.md
 - LATAM: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-LATAM.md
 - South America ecosystem: https://github.com/Kosta1985/Kosta1985/blob/main/SOUTH-AMERICA-AGENT-ECOSYSTEM.md
