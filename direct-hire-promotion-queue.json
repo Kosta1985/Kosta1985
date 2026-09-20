@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "campaign": "Direct Hire LATAM promotion execution",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
@@ -99,6 +99,40 @@
       "language": "es"
     }
   ],
+  "secondaryEcosystem": [
+    {
+      "country": "Argentina",
+      "target": "ar-agents"
+    },
+    {
+      "country": "Colombia",
+      "target": "Colombia OpenData MCP"
+    },
+    {
+      "country": "Chile",
+      "target": "Wasabil MCP"
+    },
+    {
+      "country": "Peru",
+      "target": "BCRP MCP / PNDA MCP"
+    },
+    {
+      "country": "Uruguay",
+      "target": "uruguay-mcp / MCP STM Montevideo"
+    },
+    {
+      "country": "Ecuador",
+      "target": "sri-cli / EcuAPI MCP"
+    },
+    {
+      "country": "Paraguay",
+      "target": "Paraguay DNCP MCP"
+    },
+    {
+      "country": "Venezuela",
+      "target": "AETHERIUS / aetheriusxAPI"
+    }
+  ],
   "alreadyDiscovered": [
     "Global A2A Registry",
     "AgentHermes",
@@ -107,6 +141,12 @@
     "Hype Star",
     "AgentLair",
     "Kunlun Yaochi"
+  ],
+  "excluded": [
+    {
+      "target": "GopherTools",
+      "reason": "Submission requires email; excluded by no-email campaign rule."
+    }
   ],
   "updated": "2026-09-20"
 }
