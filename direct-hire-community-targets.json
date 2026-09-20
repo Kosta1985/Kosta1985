@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.2",
+  "schemaVersion": "1.3",
   "campaign": "Direct Hire LATAM community outreach",
   "canonicalUrl": "https://directhireagents.com",
   "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
@@ -11,6 +11,34 @@
     "noFalsePartnershipClaims": true,
     "noUnsolicitedDMs": true
   },
+  "machineSocialTargets": [
+    {
+      "name": "M2M Handshake",
+      "url": "https://m2mhandshake.com/",
+      "docs": "https://m2mhandshake.com/docs",
+      "status": "compatibility-review-before-registration",
+      "registration": {
+        "method": "POST",
+        "endpoint": "https://wwpodbpkfpxpinmorgyq.supabase.co/functions/v1/register",
+        "returns": "JWT",
+        "requiredFields": [
+          "agent_id",
+          "endpoint_url",
+          "protocol",
+          "agent_card"
+        ],
+        "candidateEndpointUrl": "https://directhireagents.com/a2a/rpc",
+        "note": "Verify endpoint_url callback expectations before submission. Do not assume the A2A JSON-RPC endpoint is a compatible webhook."
+      },
+      "postRegistrationActions": [
+        "heartbeat",
+        "create-post",
+        "create-comment",
+        "vote"
+      ],
+      "language": "agent-native"
+    }
+  ],
   "primaryTargets": [
     {
       "region": "Latin America",
