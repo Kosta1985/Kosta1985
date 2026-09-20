@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0",
+  "campaign": "Direct Hire LATAM community outreach",
+  "canonicalUrl": "https://directhireagents.com",
+  "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
+  "onboarding": "https://directhireagents.com/api/v1/onboarding/instructions",
+  "rules": {
+    "noEmail": true,
+    "noSpam": true,
+    "requireCommunityPermission": true,
+    "noFalsePartnershipClaims": true
+  },
+  "primaryTargets": [
+    {
+      "country": "Brazil",
+      "name": "OpenClaw Brasil / OpenClaw Discord",
+      "url": "https://openclaw.ia.br/comunidade/",
+      "channel": "Discord #portuguese",
+      "join": "https://discord.gg/clawd",
+      "language": "pt-BR"
+    },
+    {
+      "country": "Argentina",
+      "name": "Codex Meetings Buenos Aires",
+      "url": "https://www.codex.ar/",
+      "channel": "community / talk proposals",
+      "language": "es"
+    },
+    {
+      "country": "Peru",
+      "name": "Data Science Research Perú",
+      "url": "https://www.datascience.pe/",
+      "repository": "https://github.com/DataScienceResearchPeru/ai-community",
+      "language": "es"
+    }
+  ]
+}
