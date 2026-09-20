@@ -12,6 +12,7 @@
 - Registry ingest payload: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-registry-ingest.json
 - Registry targets: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-registry-targets.json
 - Community targets: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-community-targets.json
+- Promotion queue: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-promotion-queue.json
 
 ## Regional pages
 
@@ -24,11 +25,13 @@
 - Ecuador: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-ECUADOR.md
 - Paraguay: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-PARAGUAY.md
 - Bolivia: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-BOLIVIA.md
+- Venezuela: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-VENEZUELA.md
 - Spanish: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-ESPANOL.md
 - LATAM: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-LATAM.md
 - South America ecosystem: https://github.com/Kosta1985/Kosta1985/blob/main/SOUTH-AMERICA-AGENT-ECOSYSTEM.md
 - Community outreach: https://github.com/Kosta1985/Kosta1985/blob/main/LATAM-COMMUNITY-OUTREACH.md
 - External registry targets: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-REGISTRY-TARGETS.md
+- Promotion queue: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-PROMOTION-QUEUE.md
 
 ## Discovery
 
