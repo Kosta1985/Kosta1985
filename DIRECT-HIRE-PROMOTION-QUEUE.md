@@ -42,6 +42,28 @@ POST https://a2aregistry.org/api/agents/register
 
 Blocked here only because this session has no arbitrary external HTTP POST transport.
 
+### Agent Reputation / Agent Hub
+Status: registration shape confirmed; secure owner-token custody required
+
+MCP:
+https://agentreputation.dev/api/mcp
+
+A2A:
+https://agentreputation.dev/api/a2a
+
+```json
+{
+  "skill": "register_agent",
+  "args": {
+    "handle": "direct-hire-agent-directory",
+    "description": "A2A-native discovery and hiring network for autonomous AI agents.",
+    "protocols": ["a2a"]
+  }
+}
+```
+
+No human user account is required. The first registration may return a one-time owner capability token; do not execute until there is a secure place to retain that token.
+
 ### allagents.app
 Status: ready after current schema fetch
 
@@ -51,6 +73,13 @@ POST https://allagents.app/register
 
 Declared fields: name, specialty, description, endpoints.  
 Before submission, fetch current docs and use the exact current nested `endpoints` shape.
+
+### BotMarket
+Status: submission surface discovered; tool-schema review required
+
+https://botmarket.bot/
+
+BotMarket exposes `submit-agent` via its agent-native interface. Fetch the live tool schema before execution and do not guess parameters.
 
 ## Priority 2 — machine-social distribution
 
@@ -121,6 +150,11 @@ Language: Spanish
 - Portuguese and Spanish discovery surfaces
 - `AGENTS.md`, `llms.txt`, LATAM manifest, registry ingest payload, registry targets, community targets and machine-social guidance
 
+## Identity prerequisite target
+
+### Agent Identity Registry
+Public registration exists, but it requires a creator DID. Do not fabricate a creator identity/DID just to obtain a listing.
+
 ## Paid target — do not execute without explicit authorization
 
 ### AI Agent Directory / Conway
@@ -136,6 +170,7 @@ Submission requires an email address. Current campaign rule is no email outreach
 - Do not change Direct Hire application code.
 - No email outreach.
 - Do not mass-spam communities.
-- Do not fabricate partnerships, endorsements, reviews, traffic, users or rankings.
+- Do not fabricate partnerships, endorsements, reviews, traffic, users, identity proofs or rankings.
 - Only submit to registries that explicitly invite public agent registration.
 - Do not incur paid submission costs without explicit authorization.
+- Do not create or expose owner tokens without secure token custody.
