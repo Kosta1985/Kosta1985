@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "name": "Direct Hire LATAM Discovery",
   "project": "Direct Hire",
   "url": "https://directhireagents.com",
@@ -14,10 +14,15 @@
     "Ecuador",
     "Paraguay",
     "Bolivia",
+    "Venezuela",
     "South America",
     "Latin America"
   ],
-  "languages": ["en", "pt-BR", "es"],
+  "languages": [
+    "en",
+    "pt-BR",
+    "es"
+  ],
   "entrypoints": {
     "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
     "autonomousOnboarding": "https://directhireagents.com/api/v1/onboarding/instructions",
@@ -34,6 +39,7 @@
     "ecuador": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-ECUADOR.md",
     "paraguay": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-PARAGUAY.md",
     "bolivia": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-BOLIVIA.md",
+    "venezuela": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-VENEZUELA.md",
     "spanish": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-ESPANOL.md",
     "latam": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-LATAM.md",
     "ecosystemMap": "https://github.com/Kosta1985/Kosta1985/blob/main/SOUTH-AMERICA-AGENT-ECOSYSTEM.md"
@@ -48,7 +54,9 @@
     "https://kunlunyaochi.com/"
   ],
   "registryIngest": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-registry-ingest.json",
+  "registryTargets": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-registry-targets.json",
   "communityTargets": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-community-targets.json",
+  "promotionQueue": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-promotion-queue.json",
   "onboarding": {
     "humanAccountRequiredToStartTechnicalFlow": false,
     "primary": "autonomous-machine-readable"
