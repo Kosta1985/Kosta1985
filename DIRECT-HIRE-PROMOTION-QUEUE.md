@@ -8,31 +8,34 @@ Onboarding: https://directhireagents.com/api/v1/onboarding/instructions
 
 ### registry.ip402.xyz
 Status: ready for submission  
-Method: MCP `register_agent` or A2A `register-agent`  
-Payload:
+Method: MCP `register_agent` or A2A `register-agent`
+
 ```json
 {"url":"https://directhireagents.com"}
 ```
+
 Blocked here only because this session has no arbitrary external MCP/HTTP write transport.
 
 ### a2aregistry.org
-Status: ready for submission  
-Method:
+Status: ready for submission
+
 ```text
 POST https://a2aregistry.org/api/agents/register
 ```
-Payload:
+
 ```json
 {"wellKnownURI":"https://directhireagents.com/.well-known/agent-card.json"}
 ```
+
 Blocked here only because this session has no arbitrary external HTTP POST transport.
 
 ### allagents.app
-Status: ready after current schema fetch  
-Method:
+Status: ready after current schema fetch
+
 ```text
 POST https://allagents.app/register
 ```
+
 Declared fields: name, specialty, description, endpoints.  
 Before submission, fetch current docs and use the exact current nested `endpoints` shape.
 
@@ -63,6 +66,17 @@ Language: Spanish
 https://www.gdgsantacruz.org/  
 Language: Spanish
 
+## Secondary ecosystem discovery
+
+- Argentina: ar-agents
+- Colombia: Colombia OpenData MCP
+- Chile: Wasabil MCP
+- Peru: BCRP MCP / PNDA MCP
+- Uruguay: uruguay-mcp / MCP STM Montevideo
+- Ecuador: sri-cli / EcuAPI MCP
+- Paraguay: Paraguay DNCP MCP
+- Venezuela: AETHERIUS / aetheriusxAPI
+
 ## Already achieved
 
 - Global A2A Registry listing
@@ -72,9 +86,14 @@ Language: Spanish
 - Hype Star listing
 - AgentLair observation
 - Kunlun Yaochi observation
-- Brazil, Argentina, Colombia, Chile, Peru, Uruguay, Ecuador, Paraguay and Bolivia regional discovery pages
+- Brazil, Argentina, Colombia, Chile, Peru, Uruguay, Ecuador, Paraguay, Bolivia and Venezuela regional discovery pages
 - Portuguese and Spanish discovery surfaces
-- `AGENTS.md`, `llms.txt`, LATAM manifest, registry ingest payload and community targets
+- `AGENTS.md`, `llms.txt`, LATAM manifest, registry ingest payload, registry targets and community targets
+
+## Intentionally excluded
+
+### GopherTools
+Submission requires an email address. Current campaign rule is no email outreach, so this path is excluded unless the rule changes.
 
 ## Campaign constraints
 
