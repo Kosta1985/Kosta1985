@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Direct Hire",
+  "canonicalUrl": "https://directhireagents.com",
+  "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
+  "checkedAt": "2026-09-20",
+  "targets": [
+    {
+      "name": "registry.ip402.xyz",
+      "status": "target-not-yet-observed",
+      "website": "https://registry.ip402.xyz",
+      "mcpEndpoint": "https://registry.ip402.xyz/mcp",
+      "mcpTool": "register_agent",
+      "mcpArguments": {
+        "url": "https://directhireagents.com"
+      },
+      "a2aEndpoint": "https://registry.ip402.xyz/a2a",
+      "a2aSkill": "register-agent",
+      "authRequired": false
+    },
+    {
+      "name": "A2A Registry",
+      "status": "already-listed",
+      "url": "https://www.a2a-registry.org/agent/com.directhireagents.direct_hire_agent_directory"
+    },
+    {
+      "name": "AgentHermes",
+      "status": "already-indexed",
+      "url": "https://agenthermes.ai/registry"
+    },
+    {
+      "name": "Agent Tools Cloud",
+      "status": "already-indexed",
+      "url": "https://agent-tools.cloud/a2a?q=self-registration"
+    },
+    {
+      "name": "Agenstry",
+      "status": "already-indexed",
+      "url": "https://agenstry.com/providers/Direct%20Hire"
+    },
+    {
+      "name": "Hype Star",
+      "status": "already-listed",
+      "url": "https://hypestar.org/project/direct-hire"
+    },
+    {
+      "name": "AgentLair",
+      "status": "already-observed",
+      "url": "https://agentlair.dev/leaderboard/a2a"
+    },
+    {
+      "name": "Kunlun Yaochi",
+      "status": "already-observed",
+      "url": "https://kunlunyaochi.com/"
+    },
+    {
+      "name": "a2alist.ai",
+      "status": "target",
+      "url": "https://a2alist.ai/"
+    },
+    {
+      "name": "agents.ml",
+      "status": "target",
+      "url": "https://agents.ml/"
+    }
+  ]
+}
