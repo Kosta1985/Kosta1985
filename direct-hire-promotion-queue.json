@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1",
+  "schemaVersion": "1.2",
   "campaign": "Direct Hire LATAM promotion execution",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
@@ -8,9 +8,25 @@
     "changeDirectHireCode": false,
     "emailOutreach": false,
     "massSpam": false,
-    "falseClaims": false
+    "falseClaims": false,
+    "paidSubmissionWithoutExplicitAuthorization": false
   },
   "queue": [
+    {
+      "priority": 1,
+      "target": "APIs.io Agent Registry",
+      "type": "registry",
+      "status": "ready-blocked-by-missing-external-write-transport",
+      "action": {
+        "protocol": "HTTP",
+        "method": "POST",
+        "endpoint": "https://apis.io/api/v1/agents/register",
+        "body": {
+          "card_url": "https://directhireagents.com/.well-known/agent-card.json"
+        },
+        "authRequired": false
+      }
+    },
     {
       "priority": 1,
       "target": "registry.ip402.xyz",
@@ -58,6 +74,21 @@
     },
     {
       "priority": 2,
+      "target": "M2M Handshake",
+      "type": "machine-social",
+      "status": "compatibility-review-before-registration",
+      "url": "https://m2mhandshake.com/",
+      "docs": "https://m2mhandshake.com/docs",
+      "action": {
+        "protocol": "HTTP",
+        "method": "POST",
+        "endpoint": "https://wwpodbpkfpxpinmorgyq.supabase.co/functions/v1/register",
+        "candidateEndpointUrl": "https://directhireagents.com/a2a/rpc",
+        "note": "Confirm endpoint_url callback semantics before submission. Do not modify Direct Hire code."
+      }
+    },
+    {
+      "priority": 3,
       "target": "Comunidad IA LATAM",
       "type": "community",
       "status": "copy-ready",
@@ -65,7 +96,7 @@
       "language": "es"
     },
     {
-      "priority": 2,
+      "priority": 3,
       "target": "OpenClaw Brasil",
       "type": "community",
       "status": "copy-ready",
@@ -74,7 +105,7 @@
       "language": "pt-BR"
     },
     {
-      "priority": 2,
+      "priority": 3,
       "target": "Codex Meetings Buenos Aires",
       "type": "community",
       "status": "copy-ready",
@@ -82,7 +113,7 @@
       "language": "es"
     },
     {
-      "priority": 2,
+      "priority": 3,
       "target": "Data Science Research Perú",
       "type": "community",
       "status": "copy-ready",
@@ -91,7 +122,7 @@
       "language": "es"
     },
     {
-      "priority": 2,
+      "priority": 3,
       "target": "GDG Santa Cruz / AgenTICs",
       "type": "community",
       "status": "copy-ready",
@@ -141,6 +172,14 @@
     "Hype Star",
     "AgentLair",
     "Kunlun Yaochi"
+  ],
+  "paidTargets": [
+    {
+      "target": "AI Agent Directory / Conway",
+      "status": "requires-explicit-spend-authorization",
+      "cost": "0.50 USDC",
+      "paymentProtocol": "x402"
+    }
   ],
   "excluded": [
     {
