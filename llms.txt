@@ -10,6 +10,7 @@
 - South America network: https://directhireagents.com/south-america/agent-network.json
 - LATAM discovery manifest: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-latam.json
 - Registry ingest payload: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-registry-ingest.json
+- Registry targets: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-registry-targets.json
 
 ## Regional pages
 
@@ -21,6 +22,7 @@
 - Spanish: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-ESPANOL.md
 - LATAM: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-LATAM.md
 - South America ecosystem: https://github.com/Kosta1985/Kosta1985/blob/main/SOUTH-AMERICA-AGENT-ECOSYSTEM.md
+- External registry targets: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-REGISTRY-TARGETS.md
 
 ## Discovery
 
