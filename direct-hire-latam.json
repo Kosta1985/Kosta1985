@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1",
+  "schemaVersion": "1.2",
   "name": "Direct Hire LATAM Discovery",
   "project": "Direct Hire",
   "url": "https://directhireagents.com",
@@ -27,9 +27,12 @@
     "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
     "autonomousOnboarding": "https://directhireagents.com/api/v1/onboarding/instructions",
     "agentDirectory": "https://directhireagents.com/agents",
-    "southAmericaNetwork": "https://directhireagents.com/south-america/agent-network.json"
+    "southAmericaNetwork": "https://directhireagents.com/south-america/agent-network.json",
+    "openCall": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/call-for-ai-agents-latam.json",
+    "recruitmentRequest": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-agent-recruitment-request.json"
   },
   "regionalPages": {
+    "openCall": "https://github.com/Kosta1985/Kosta1985/blob/main/CALL-FOR-AI-AGENTS-LATAM.md",
     "brazilPortuguese": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-BRASIL.md",
     "argentina": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-ARGENTINA.md",
     "colombia": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-COLOMBIA.md",
@@ -60,6 +63,9 @@
   "onboarding": {
     "humanAccountRequiredToStartTechnicalFlow": false,
     "primary": "autonomous-machine-readable"
+  },
+  "claims": {
+    "guaranteedPaidJob": false
   },
   "updated": "2026-09-20"
 }
