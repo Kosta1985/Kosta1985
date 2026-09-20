@@ -10,7 +10,7 @@ A2A Agent Card: https://directhireagents.com/.well-known/agent-card.json
 Public A2A registry:
 https://registry.ip402.xyz
 
-The registry accepts agent registration without an account or API key. It validates the live A2A endpoint and extracts listing metadata directly from the Agent Card.
+The registry accepts agent registration without an account or API key and validates the live endpoint.
 
 ### Preferred MCP submission
 
@@ -28,8 +28,6 @@ Arguments:
 }
 ```
 
-The public registry documentation states that `register_agent` runs the full validation pipeline and creates or updates the listing.
-
 ### A2A alternative
 
 A2A endpoint:
@@ -41,51 +39,96 @@ Skill:
 Use the Direct Hire base URL:
 https://directhireagents.com
 
-## 2. A2A Registry — already listed
+## 2. a2aregistry.org — target not yet observed
+
+Public registry:
+https://a2aregistry.org/
+
+Registration endpoint:
+
+```text
+POST https://a2aregistry.org/api/agents/register
+```
+
+Payload:
+
+```json
+{
+  "wellKnownURI": "https://directhireagents.com/.well-known/agent-card.json"
+}
+```
+
+The registry fetches the Agent Card from the supplied wellKnownURI.
+
+## 3. allagents.app — target not yet observed
+
+Directory:
+https://allagents.app/
+
+The public Agent Card states that listing is free, instant and accountless through:
+
+```text
+POST https://allagents.app/register
+```
+
+Declared fields:
+`name`, `specialty`, `description`, `endpoints`.
+
+Before automated submission, fetch the current documentation/Agent Card and follow its exact current field schema rather than guessing the nested `endpoints` shape.
+
+## 4. Global A2A Registry — already listed
 
 https://www.a2a-registry.org/agent/com.directhireagents.direct_hire_agent_directory
 
 Current external status may differ from other registries because each service uses its own health-check implementation.
 
-## 3. AgentHermes — already indexed
+## 5. AgentHermes — already indexed
 
 https://agenthermes.ai/registry
 
 Direct Hire is currently discoverable there as an A2A/REST business.
 
-## 4. Agent Tools Cloud — already indexed
+## 6. Agent Tools Cloud — already indexed
 
 https://agent-tools.cloud/a2a?q=self-registration
 
 Direct Hire is currently discovered and health-probed there.
 
-## 5. Agenstry — already indexed
+## 7. Agenstry — already indexed
 
 https://agenstry.com/providers/Direct%20Hire
 
-## 6. Hype Star — already listed
+## 8. Hype Star — already listed
 
 https://hypestar.org/project/direct-hire
 
-## 7. AgentLair — already observed
+## 9. AgentLair — already observed
 
 https://agentlair.dev/leaderboard/a2a
 
-## 8. Kunlun Yaochi — already observed
+## 10. Kunlun Yaochi — already observed
 
 https://kunlunyaochi.com/
 
-## 9. a2alist.ai — target
+## 11. a2alist.ai — target
 
 https://a2alist.ai/
 
 A2A/x402 directory. Direct Hire has not been observed in its current public index during the latest check.
 
-## 10. agents.ml — target
+## 12. agents.ml — target
 
 https://agents.ml/
 
-Agent profile/directory surface with A2A and machine-readable profiles. Direct Hire has not been observed there during the latest check.
+Agent profile/directory surface. Direct Hire has not been observed there during the latest check.
+
+## Excluded from this no-email campaign
+
+### GopherTools
+
+https://gophertools.dev/agents/submit/
+
+The submission form requires an email address, so it is intentionally excluded from this campaign unless the campaign rules change.
 
 ## Rules for automated submission
 
@@ -94,3 +137,4 @@ Agent profile/directory surface with A2A and machine-readable profiles. Direct H
 - Do not fabricate partnerships, reviews, ratings, users, or usage metrics.
 - Do not submit duplicate records where the registry already has Direct Hire.
 - Respect each registry's rate limits and validation rules.
+- Do not use email-required submission paths in the current no-email campaign.
