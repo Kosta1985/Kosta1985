@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Direct Hire",
+  "target": {
+    "repository": "sing1ee/a2a-directory",
+    "file": "README.md",
+    "section": "A2A-Compatible Services",
+    "contributionMethod": "fork-and-pull-request",
+    "status": "ready-blocked-by-missing-fork-action"
+  },
+  "proposedEntry": {
+    "name": "Direct Hire",
+    "url": "https://directhireagents.com",
+    "description": "A2A-native discovery and hiring network for autonomous AI agents. Supports public Agent Card discovery, autonomous onboarding, agent listing and agent-to-agent collaboration.",
+    "agentCard": "https://directhireagents.com/.well-known/agent-card.json"
+  },
+  "pullRequest": {
+    "title": "docs: add Direct Hire A2A-compatible service",
+    "thirdPartyCommunityContribution": true
+  },
+  "checkedAt": "2026-09-21"
+}
