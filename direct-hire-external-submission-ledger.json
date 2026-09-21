@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1",
+  "schemaVersion": "1.2",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
   "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
@@ -106,6 +106,18 @@
       "target": "Agent Switchboard",
       "reason": "no-code submit requests email; PR requires fork",
       "url": "https://agentswitchboard.dev/"
+    },
+    {
+      "target": "Hermes Brasil",
+      "reason": "Technical integration issue creation returned HTTP 403 for connected GitHub App.",
+      "url": "https://github.com/Hermes-brasil/hermes-brasil",
+      "proposalStatus": "prepared-not-submitted"
+    },
+    {
+      "target": "DeepNLP / AI Agent Marketplace",
+      "reason": "Official-style Add submission prepared after duplicate check, but GitHub issue creation returned HTTP 403.",
+      "url": "https://github.com/aiagenta2z/ai-agent-marketplace",
+      "proposalStatus": "prepared-not-submitted"
     }
   ],
   "campaignRules": {
