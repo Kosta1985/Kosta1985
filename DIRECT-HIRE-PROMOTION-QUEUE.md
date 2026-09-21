@@ -7,15 +7,12 @@ Onboarding: https://directhireagents.com/api/v1/onboarding/instructions
 ## Priority 1 — accountless / free submissions
 
 ### APIs.io Agent Registry
-Status: ready for submission
+Status: **already indexed**
 
-```text
-POST https://apis.io/api/v1/agents/register
-```
+Provider page:
+https://apis.io/providers/directhireagents-com/
 
-```json
-{"card_url":"https://directhireagents.com/.well-known/agent-card.json"}
-```
+APIs.io currently exposes both the Direct Hire REST API and the Direct Hire A2A Meta-Agent, harvested from the public Agent Card and OpenAPI surfaces. Do not submit a duplicate registration.
 
 ### registry.ip402.xyz
 Status: ready for submission
@@ -111,6 +108,37 @@ Skill: `submit-agent`
 
 Fetch the live tool schema before execution and do not guess parameters.
 
+## Confirmed external submissions
+
+### ai-boost/awesome-a2a
+Status: **open submission**
+
+https://github.com/ai-boost/awesome-a2a/issues/172
+
+The existing issue includes Direct Hire, the public Agent Card, A2A v1 endpoints and fresh interoperability evidence. Do not open a duplicate issue.
+
+### Awesome AI Agents 2026
+Status: **submitted 2026-09-21**
+
+https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/issues/295
+
+Submitted through the repository's official no-code agent-submission workflow as an Emerging Platform in Agent Tooling and Infrastructure.
+
+### Grok Agent Store
+Status: **submission prepared, blocked by GitHub App comment permission**
+
+Submission thread:
+https://github.com/manhatton31-svg/grok-agent-store/issues/2
+
+The repository explicitly accepts agent submissions as issue comments, but the connected GitHub integration received HTTP 403 when attempting to post the comment. Do not create a separate issue because that would bypass the maintainer's requested flow.
+
+### Agennect
+Status: **eligible, external write/PR path required**
+
+https://github.com/agennect/agennect-open
+
+Agennect's public registry accepts A2A agents via PR metadata or its Connect onboarding agent. Direct Hire is a strong fit, but this session cannot complete the external onboarding write or fork workflow.
+
 ## Priority 2 — verification/network targets
 
 ### Moltbridge
@@ -151,6 +179,7 @@ Do not submit until `endpoint_url` callback semantics are confirmed compatible w
 
 ## Already achieved
 
+- APIs.io provider/index entry — https://apis.io/providers/directhireagents-com/
 - Global A2A Registry listing
 - AgentHermes indexing
 - Agent Tools Cloud indexing
