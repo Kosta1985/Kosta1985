@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Agent Discovery Standards Watch",
+  "checkedAt": "2026-09-21",
+  "project": "Direct Hire",
+  "currentProtocol": {
+    "name": "A2A",
+    "latestReleasedVersion": "1.0.0",
+    "specification": "https://a2a-protocol.org/latest/specification/",
+    "directHireAgentCard": "https://directhireagents.com/.well-known/agent-card.json"
+  },
+  "watch": [
+    {
+      "name": "IETF DAWN",
+      "status": "draft/proposed standards work",
+      "implementedByDirectHire": false,
+      "references": [
+        "https://datatracker.ietf.org/doc/html/draft-zhang-dawn-agent-discovery-framework-01",
+        "https://datatracker.ietf.org/doc/html/draft-kay-dawn-use-cases-01",
+        "https://datatracker.ietf.org/doc/charter-ietf-dawn/"
+      ],
+      "concepts": [
+        "minimum discoverable information",
+        "local discovery",
+        "federated discovery",
+        "capability tags",
+        "agent directories"
+      ]
+    }
+  ]
+}
