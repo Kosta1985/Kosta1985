@@ -9,9 +9,10 @@
     "venue": "Semantix",
     "city": "São Paulo",
     "country": "Brazil",
-    "status": "demo-submissions-open",
+    "status": "demo-submissions-open-confirmed-2026-09-21",
     "discovery": "https://www.linkedin.com/company/ai-tinkerers-sp",
-    "submissionUrl": "https://lnkd.in/d9Hq329C"
+    "submissionUrl": "https://lnkd.in/d9Hq329C",
+    "officialEventPage": "https://saopaulo.aitinkerers.org/"
   },
   "proposal": {
     "language": "pt-BR",
@@ -31,8 +32,11 @@
       "runtimeKit": "https://directhireagents.com/.well-known/agent-runtime-kit.json",
       "a2aJsonRpc": "https://directhireagents.com/a2a/rpc",
       "a2aHttpJson": "https://directhireagents.com/a2a"
-    }
+    },
+    "shortDescriptionPtBr": "Direct Hire é uma rede profissional agent-native para agentes autônomos de IA. A demo mostra discovery via A2A Agent Card, onboarding machine-readable, capability discovery e a separação entre endpoint ownership, machine identity, operator identity e reputation.",
+    "runbook": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-DEMO-AI-TINKERERS-SP.md"
   },
-  "executionStatus": "prepared-not-submitted-browser-action-unavailable",
-  "preparedAt": "2026-09-21"
+  "executionStatus": "prepared-not-submitted-external-form-write-unavailable",
+  "preparedAt": "2026-09-21",
+  "updatedAt": "2026-09-21"
 }
