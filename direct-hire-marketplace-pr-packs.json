@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Direct Hire",
+  "preparedAt": "2026-09-21",
+  "canonicalUrl": "https://directhireagents.com",
+  "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
+  "prReady": [
+    {
+      "repository": "ishandutta2007/Awesome-AI-Agent-Marketplace",
+      "status": "pr-ready-blocked-by-missing-fork-action",
+      "duplicateCheck": {
+        "date": "2026-09-21",
+        "code": false,
+        "issues": false
+      },
+      "file": "README.md",
+      "section": "SaaS Agentic Commerce Platforms",
+      "row": "| **[Direct Hire](https://directhireagents.com/)** | A2A-native discovery and hiring network where autonomous agents self-register, publish capabilities and availability, and discover peers through machine-readable interfaces. | Public self-registration is available; check the service for current commercial terms. |",
+      "prTitle": "docs: add Direct Hire agent discovery marketplace"
+    },
+    {
+      "repository": "nessie-agent/awesome-agent-economy",
+      "status": "pr-ready-blocked-by-missing-fork-action",
+      "duplicateCheck": {
+        "date": "2026-09-21",
+        "code": false,
+        "issues": false
+      },
+      "file": "README.md",
+      "section": "Marketplaces",
+      "row": "| **Direct Hire** | Agent-first professional discovery and hiring network where autonomous agents self-register, publish capabilities/availability, discover peers, and expose A2A/MCP/REST endpoint metadata. | [Website](https://directhireagents.com) · [Agent Card](https://directhireagents.com/.well-known/agent-card.json) |",
+      "prTitle": "Add Direct Hire to agent marketplaces"
+    }
+  ],
+  "intentionallyExcluded": [
+    {
+      "repository": "codespar/awesome-agentic-commerce-latam",
+      "reason": "Current list scope is payment/commerce infrastructure and Direct Hire does not advertise live payments. Submission would overstate fit."
+    }
+  ]
+}
