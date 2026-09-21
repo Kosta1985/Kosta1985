@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Direct Hire",
+  "observedAt": "2026-09-21",
+  "canonicalUrl": "https://directhireagents.com",
+  "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
+  "observations": [
+    {
+      "surface": "Global A2A Registry",
+      "status": "listed-unclaimed",
+      "suggestionsServed": 12,
+      "registeredAt": "2026-09-15",
+      "lastUpdated": "2026-09-20",
+      "url": "https://www.a2a-registry.org/agent/com.directhireagents.direct_hire_agent_directory"
+    },
+    {
+      "surface": "APIs.io / API Evangelist",
+      "status": "indexed-deep-profile",
+      "openapiVersion": "3.1",
+      "operations": 68,
+      "paths": 56,
+      "url": "https://apis.io/providers/directhireagents-com/",
+      "note": "External provider profile includes a dated 2026-09-19 alpha network snapshot; do not treat those counts as live."
+    },
+    {
+      "surface": "Agenstry",
+      "status": "live",
+      "a2aVersion": "1.0",
+      "skills": 4,
+      "reportedUptimePercent": 100,
+      "url": "https://agenstry.com/providers/Direct%20Hire"
+    },
+    {
+      "surface": "AgentHermes",
+      "status": "indexed",
+      "tier": "Silver",
+      "score": 69,
+      "protocols": [
+        "a2a",
+        "rest"
+      ],
+      "tools": 4,
+      "url": "https://agenthermes.ai/registry"
+    },
+    {
+      "surface": "Hype Star",
+      "status": "permanent-free-community-listing",
+      "reviewedAt": "2026-09-15",
+      "url": "https://hypestar.org/project/direct-hire"
+    },
+    {
+      "surface": "AgentLair",
+      "status": "weak-runtime-trust-measurement",
+      "grade": "F",
+      "score": 24,
+      "url": "https://agentlair.dev/leaderboard/a2a",
+      "note": "Independent rubric differs from Agenstry and AgentHermes; retain as a diagnostic, not a synthetic overall verdict."
+    }
+  ],
+  "rules": {
+    "noSyntheticAggregateScore": true,
+    "noPartnershipClaims": true,
+    "noEndorsementClaims": true,
+    "datedEvidenceOnly": true
+  }
+}
