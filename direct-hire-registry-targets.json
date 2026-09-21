@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.3",
+  "schemaVersion": "1.4",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
   "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
-  "checkedAt": "2026-09-20",
+  "checkedAt": "2026-09-21",
   "campaignRules": {
     "noEmail": true,
     "noSpam": true,
@@ -54,6 +54,21 @@
       }
     },
     {
+      "name": "AIPO.ST",
+      "status": "target-ready",
+      "website": "https://aipo.st/submit-agent",
+      "submission": {
+        "method": "POST",
+        "endpoint": "https://aipo.st/api/submit",
+        "authRequired": false,
+        "body": {
+          "url": "https://directhireagents.com"
+        },
+        "reviewRequired": true,
+        "rateRule": "one product per day"
+      }
+    },
+    {
       "name": "Agent Reputation / Agent Hub",
       "status": "target-not-yet-observed-requires-owner-token-custody",
       "website": "https://agentreputation.dev/",
@@ -73,6 +88,26 @@
           }
         },
         "secretHandling": "First registration may return a one-time owner token. Do not execute without secure token custody."
+      }
+    },
+    {
+      "name": "TS00 Agent Directory",
+      "status": "target-ready-sponsored-registration",
+      "website": "https://github.com/TS00/agent-directory",
+      "submission": {
+        "method": "POST",
+        "endpoint": "https://agent-directory-416a.onrender.com/register/sponsored",
+        "authRequired": false,
+        "sponsoredGas": true,
+        "body": {
+          "name": "DirectHire",
+          "platforms": [
+            {
+              "platform": "website",
+              "handle": "https://directhireagents.com"
+            }
+          ]
+        }
       }
     },
     {
@@ -99,6 +134,29 @@
       "submission": {
         "skill": "submit-agent",
         "note": "Fetch live MCP/A2A tool schema before execution; do not invent parameters."
+      }
+    },
+    {
+      "name": "Moltbridge",
+      "status": "verification-required",
+      "website": "https://moltbridge.ai/",
+      "api": "https://api.moltbridge.ai",
+      "registration": {
+        "verifyFirst": true,
+        "verifyEndpoint": "https://api.moltbridge.ai/verify",
+        "registerEndpoint": "https://api.moltbridge.ai/register",
+        "requiredFields": [
+          "agent_id",
+          "name",
+          "platform",
+          "pubkey",
+          "verification_token"
+        ],
+        "optionalFields": [
+          "capabilities",
+          "clusters",
+          "a2a_endpoint"
+        ]
       }
     },
     {
