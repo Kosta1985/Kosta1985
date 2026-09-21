@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.3",
+  "schemaVersion": "1.4",
   "campaign": "Direct Hire LATAM promotion execution",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
@@ -59,6 +59,45 @@
     },
     {
       "priority": 1,
+      "target": "AIPO.ST",
+      "type": "ai-product-directory",
+      "status": "ready-blocked-by-missing-external-write-transport",
+      "action": {
+        "protocol": "HTTP",
+        "method": "POST",
+        "endpoint": "https://aipo.st/api/submit",
+        "body": {
+          "url": "https://directhireagents.com"
+        },
+        "authRequired": false,
+        "reviewRequired": true,
+        "rateRule": "one-product-per-day"
+      }
+    },
+    {
+      "priority": 1,
+      "target": "TS00 Agent Directory",
+      "type": "agent-directory",
+      "status": "ready-blocked-by-missing-external-write-transport",
+      "action": {
+        "protocol": "HTTP",
+        "method": "POST",
+        "endpoint": "https://agent-directory-416a.onrender.com/register/sponsored",
+        "body": {
+          "name": "DirectHire",
+          "platforms": [
+            {
+              "platform": "website",
+              "handle": "https://directhireagents.com"
+            }
+          ]
+        },
+        "authRequired": false,
+        "sponsoredGas": true
+      }
+    },
+    {
+      "priority": 1,
       "target": "Agent Reputation / Agent Hub",
       "type": "registry-and-matching",
       "status": "ready-except-secure-owner-token-custody-and-external-write-transport",
@@ -110,6 +149,29 @@
     },
     {
       "priority": 2,
+      "target": "Moltbridge",
+      "type": "professional-agent-network",
+      "status": "verification-required",
+      "url": "https://moltbridge.ai/",
+      "action": {
+        "verifyEndpoint": "https://api.moltbridge.ai/verify",
+        "registerEndpoint": "https://api.moltbridge.ai/register",
+        "requiredRegistrationFields": [
+          "agent_id",
+          "name",
+          "platform",
+          "pubkey",
+          "verification_token"
+        ],
+        "optionalFields": [
+          "capabilities",
+          "clusters",
+          "a2a_endpoint"
+        ]
+      }
+    },
+    {
+      "priority": 2,
       "target": "M2M Handshake",
       "type": "machine-social",
       "status": "compatibility-review-before-registration",
@@ -137,7 +199,6 @@
       "type": "community",
       "status": "copy-ready",
       "url": "https://openclaw.ia.br/comunidade/",
-      "join": "https://discord.gg/clawd",
       "language": "pt-BR"
     },
     {
@@ -154,7 +215,6 @@
       "type": "community",
       "status": "copy-ready",
       "url": "https://www.datascience.pe/",
-      "repository": "https://github.com/DataScienceResearchPeru/ai-community",
       "language": "es"
     },
     {
@@ -166,69 +226,5 @@
       "language": "es"
     }
   ],
-  "secondaryEcosystem": [
-    {
-      "country": "Argentina",
-      "target": "ar-agents"
-    },
-    {
-      "country": "Colombia",
-      "target": "Colombia OpenData MCP"
-    },
-    {
-      "country": "Chile",
-      "target": "Wasabil MCP"
-    },
-    {
-      "country": "Peru",
-      "target": "BCRP MCP / PNDA MCP"
-    },
-    {
-      "country": "Uruguay",
-      "target": "uruguay-mcp / MCP STM Montevideo"
-    },
-    {
-      "country": "Ecuador",
-      "target": "sri-cli / EcuAPI MCP"
-    },
-    {
-      "country": "Paraguay",
-      "target": "Paraguay DNCP MCP"
-    },
-    {
-      "country": "Venezuela",
-      "target": "AETHERIUS / aetheriusxAPI"
-    }
-  ],
-  "alreadyDiscovered": [
-    "Global A2A Registry",
-    "AgentHermes",
-    "Agent Tools Cloud",
-    "Agenstry",
-    "Hype Star",
-    "AgentLair",
-    "Kunlun Yaochi"
-  ],
-  "prerequisiteTargets": [
-    {
-      "target": "Agent Identity Registry",
-      "status": "requires-valid-creator-did",
-      "note": "Do not fabricate creator identity/DID."
-    }
-  ],
-  "paidTargets": [
-    {
-      "target": "AI Agent Directory / Conway",
-      "status": "requires-explicit-spend-authorization",
-      "cost": "0.50 USDC",
-      "paymentProtocol": "x402"
-    }
-  ],
-  "excluded": [
-    {
-      "target": "GopherTools",
-      "reason": "Submission requires email; excluded by no-email campaign rule."
-    }
-  ],
-  "updated": "2026-09-20"
+  "updated": "2026-09-21"
 }
