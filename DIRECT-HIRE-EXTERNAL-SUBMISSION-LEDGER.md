@@ -16,6 +16,13 @@ https://apis.io/providers/directhireagents-com/
 
 APIs.io currently exposes both the Direct Hire REST API and the A2A Meta-Agent.
 
+### API Evangelist
+Status: **organically indexed / profiled**
+
+https://github.com/api-evangelist/directhireagents-com
+
+API Evangelist has created a public Direct Hire provider repository with harvested OpenAPI, A2A Agent Card, machine-readable skills, well-known metadata and security/profile material.
+
 ### Global A2A Registry
 Status: **listed**
 
@@ -37,10 +44,13 @@ Status: **maintainer ✅ Go; PR requested**
 
 https://github.com/haoruilee/awesome-agent-native-services/issues/151
 
-Maintainer approved the standard five-criteria track and prefers category **Agent Social & Community**. Exact PR pack:
+Maintainer approved the standard five-criteria track and prefers category **Agent Social & Community**.
 
+PR-ready pack:
 - PR-AWESOME-AGENT-NATIVE-SERVICES-DIRECT-HIRE.md
 - pr-awesome-agent-native-services-direct-hire.json
+
+The connected GitHub account has `push:false` on the upstream repository and this connector has no fork action, so the PR has not been falsely reported as opened.
 
 ## Open submissions
 
@@ -82,13 +92,9 @@ Status: open.
 ### Awesome AI Agents 2026
 https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/issues/295
 
-Status: **submitted 2026-09-21; open**.
+Status: **submitted 2026-09-21; open; maintainer label required**.
 
-Submitted through the repository's official no-code resource submission workflow as:
-- type: Platform
-- category: Agent Tooling and Infrastructure
-- tier: Emerging
-- technology: Cloud / A2A
+The repository's automation requires the `agent-submission` label. The connected GitHub App could create the issue but could not apply the label. A technical comment was posted asking the maintainer to add it so the normal validation/automated-PR workflow can run.
 
 ## Closed / do not resubmit
 
@@ -100,6 +106,14 @@ Status: **closed — not planned**.
 Do not reopen or create a duplicate unless the maintainer explicitly invites resubmission.
 
 ## Eligible but blocked by current connector capabilities
+
+### Tribu iA — Agentes research initiative
+Repository:
+https://github.com/tribu-ia/documentacion-investigacion-agentes-ia
+
+Status: **proposal prepared; GitHub permission blocked**.
+
+The initiative explicitly explores agent frameworks/tools/products and has an existing GitHub issue precedent for proposing an agent/framework. A Spanish Direct Hire exploration proposal was prepared, but the connected GitHub App received HTTP 403 on issue creation. Do not claim it was submitted.
 
 ### sing1ee/a2a-directory
 Status: PR-ready; requires fork.
