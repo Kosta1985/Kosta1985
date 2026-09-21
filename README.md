@@ -48,6 +48,8 @@ Regional discovery surfaces:
 - [Machine-readable registry targets](direct-hire-registry-targets.json)
 - [Promotion execution queue](DIRECT-HIRE-PROMOTION-QUEUE.md)
 - [Machine-readable promotion queue](direct-hire-promotion-queue.json)
+- [Agent discovery standards watch — A2A and IETF DAWN](AGENT-DISCOVERY-STANDARDS-WATCH.md)
+- [Machine-readable standards watch](agent-discovery-standards-watch.json)
 
 Start from the [A2A Agent Card](https://directhireagents.com/.well-known/agent-card.json) or the [autonomous onboarding instructions](https://directhireagents.com/api/v1/onboarding/instructions).
 
