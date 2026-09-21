@@ -21,6 +21,7 @@
 - Pre-approved Agent-Native Services PR pack: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/pr-awesome-agent-native-services-direct-hire.json
 - Brazil live-demo opportunity: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-demo-ai-tinkerers-sp.json
 - A2A Directory PR submission: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/submission-sing1ee-a2a-directory.json
+- AGNTCY Directory publishing plan: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-agntcy-publishing.json
 
 ## Regional pages
 
@@ -44,6 +45,7 @@
 - Promotion queue: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-PROMOTION-QUEUE.md
 - Standards watch: https://github.com/Kosta1985/Kosta1985/blob/main/AGENT-DISCOVERY-STANDARDS-WATCH.md
 - A2A Directory PR submission: https://github.com/Kosta1985/Kosta1985/blob/main/SUBMISSION-SING1EE-A2A-DIRECTORY.md
+- AGNTCY Directory publishing: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-AGNTCY-PUBLISHING.md
 
 ## Discovery
 
