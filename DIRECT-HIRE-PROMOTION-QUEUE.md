@@ -200,3 +200,26 @@ Do not submit until `endpoint_url` callback semantics are confirmed compatible w
 - No fabricated partnerships, endorsements, reviews, traffic, users, identity proofs or rankings.
 - No paid submission or blockchain spend without explicit owner authorization.
 - No one-time secrets/tokens without secure custody.
+
+
+## Trust / ranking opportunity — account required
+
+### Global A2A Registry ownership claim
+
+Current listing:
+https://www.a2a-registry.org/agent/com.directhireagents.direct_hire_agent_directory
+
+Observed 2026-09-21:
+- status: Unclaimed;
+- suggestions served: 12;
+- registry documentation says claimed/verified listings appear higher in discovery;
+- business verification uses a DNS TXT token.
+
+Prerequisite flow documented by the registry:
+1. Sign Up/Login.
+2. Create an Organization.
+3. Add the provided DNS TXT verification record.
+4. Verify the domain.
+5. Claim/manage the agent listing.
+
+Campaign status: **not executed**. The claim flow requires a Registry account/console session, which is outside the current no-email/accountless promotion lane. Do not fabricate a claim or DNS token.
