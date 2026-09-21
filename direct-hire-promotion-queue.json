@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.4",
+  "schemaVersion": "1.5",
   "campaign": "Direct Hire LATAM promotion execution",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
@@ -148,6 +148,19 @@
       }
     },
     {
+      "priority": 1,
+      "target": "sing1ee/a2a-directory",
+      "type": "fork-and-pull-request",
+      "status": "pr-ready-blocked-by-missing-fork-action",
+      "action": {
+        "repository": "sing1ee/a2a-directory",
+        "file": "README.md",
+        "section": "A2A-Compatible Services",
+        "submissionAsset": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/submission-sing1ee-a2a-directory.json",
+        "prTitle": "docs: add Direct Hire A2A-compatible service"
+      }
+    },
+    {
       "priority": 2,
       "target": "Moltbridge",
       "type": "professional-agent-network",
@@ -224,6 +237,12 @@
       "status": "copy-ready",
       "url": "https://www.gdgsantacruz.org/",
       "language": "es"
+    }
+  ],
+  "excludedTargets": [
+    {
+      "target": "Microsoft Discovery catalog",
+      "reason": "Current catalog accepts kind: prompt agents only; Direct Hire is a hosted A2A discovery/hiring service, so submission would not fit the catalog contract."
     }
   ],
   "updated": "2026-09-21"
