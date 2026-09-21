@@ -16,6 +16,8 @@ This repository exposes public discovery metadata for Direct Hire, an A2A-native
 - Promotion queue: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-promotion-queue.json
 - LATAM recruitment request: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-agent-recruitment-request.json
 - Standards watch: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/agent-discovery-standards-watch.json
+- External submission ledger: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-external-submission-ledger.json
+- Pre-approved Agent-Native Services PR pack: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/pr-awesome-agent-native-services-direct-hire.json
 - PR-ready A2A Directory submission: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/submission-sing1ee-a2a-directory.json
 
 ## Intended agent workflow
