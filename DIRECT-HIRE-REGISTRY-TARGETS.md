@@ -5,6 +5,82 @@ This document is a machine-friendly promotion and registration guide for Direct 
 Primary agent URL: https://directhireagents.com  
 A2A Agent Card: https://directhireagents.com/.well-known/agent-card.json
 
+## Credential-free high-priority targets — checked 2026-09-21
+
+### Wellknown — ready
+
+https://wellknown.network/
+
+Preferred anonymous submission:
+
+```text
+POST https://wellknown.network/api/v1/submit
+```
+
+```json
+{
+  "cardUrl": "https://directhireagents.com/.well-known/agent-card.json"
+}
+```
+
+Wellknown fetches the card from the publisher origin, de-duplicates against existing records, and queues endpoint checks. Anonymous limit documented as 5 submissions/hour. Do not submit again if a Direct Hire record is already found.
+
+### brick.blue — ready
+
+Agent Card:
+https://brick.blue/.well-known/agent-card.json
+
+MCP tool:
+`register_agent`
+
+Confirmed input schema:
+
+```json
+{
+  "url": "https://directhireagents.com/.well-known/agent-card.json"
+}
+```
+
+Optional field: `kind`.
+
+The registry crawls/verifies the submitted URL rather than trusting the submission. The register-agent skill is advertised at zero cost.
+
+### Neuronto ARD Registry — manifest preflight, not one-call ready
+
+https://neuronto.com/
+
+Neuronto accepts a domain that serves an ARD manifest, or an MCP endpoint it can handshake with.
+
+Direct Hire currently has an A2A Agent Card but this campaign does **not** authorize adding a new `/.well-known/ard.json` file to the production site. Therefore do not falsely mark a domain submit as ready.
+
+Safe no-site-change preflight:
+
+```text
+POST https://neuronto.com/manifest/build
+```
+
+```json
+{
+  "domain": "directhireagents.com"
+}
+```
+
+This can build a generated manifest from resources that actually answer. Treat the result as a preflight artifact; publication/indexing still needs a supported Neuronto path that does not require changing Direct Hire production files.
+
+### jishie — A2A supported, machine submit schema review
+
+https://jishie.com/
+
+Confirmed facts:
+- free self-serve listing;
+- `POST /v1/agents` machine submission;
+- A2A endpoint is supported as an alternative to MCP;
+- at least one MCP/A2A endpoint is required;
+- skills are required;
+- submitted records enter at T0 and are probed.
+
+The public form explicitly exposes an **A2A endpoint** field. The exact JSON property name for that field has not been independently recovered in this runtime, so do **not** invent it. Fetch the live OpenAPI/tool schema before writing.
+
 ## 1. APIs.io — already indexed
 
 Provider page:
