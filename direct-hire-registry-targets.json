@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.6",
+  "schemaVersion": "1.7",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
   "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
@@ -13,6 +13,75 @@
     "requireSecureSecretCustody": true
   },
   "targets": [
+    {
+      "name": "jishie",
+      "status": "a2a-supported-submit-schema-review",
+      "website": "https://jishie.com/",
+      "submission": {
+        "method": "POST",
+        "endpoint": "https://jishie.com/v1/agents",
+        "authRequired": false,
+        "confirmedFormFields": [
+          "name",
+          "mcp endpoint",
+          "A2A endpoint",
+          "skills",
+          "operator",
+          "contact"
+        ],
+        "requiredConcepts": [
+          "name",
+          "at least one MCP/A2A endpoint",
+          "skills"
+        ],
+        "note": "Exact JSON property name for the A2A endpoint was not independently recovered. Fetch live OpenAPI/tool schema before write; do not guess."
+      }
+    },
+    {
+      "name": "Neuronto ARD Registry",
+      "status": "manifest-build-preflight-no-production-ard-manifest",
+      "website": "https://neuronto.com/",
+      "preflight": {
+        "method": "POST",
+        "endpoint": "https://neuronto.com/manifest/build",
+        "body": {
+          "domain": "directhireagents.com"
+        },
+        "note": "Generated manifest preflight only. Direct Hire production does not currently publish an authorized ARD manifest in this no-code campaign."
+      }
+    },
+    {
+      "name": "brick.blue",
+      "status": "target-ready-mcp-register-agent",
+      "website": "https://brick.blue/",
+      "submission": {
+        "protocol": "MCP",
+        "endpoint": "https://brick.blue/mcp",
+        "tool": "register_agent",
+        "arguments": {
+          "url": "https://directhireagents.com/.well-known/agent-card.json"
+        },
+        "optionalFields": [
+          "kind"
+        ],
+        "cost": "0"
+      }
+    },
+    {
+      "name": "Wellknown",
+      "status": "target-ready-agent-card-submit",
+      "website": "https://wellknown.network/",
+      "submission": {
+        "method": "POST",
+        "endpoint": "https://wellknown.network/api/v1/submit",
+        "authRequired": false,
+        "body": {
+          "cardUrl": "https://directhireagents.com/.well-known/agent-card.json"
+        },
+        "anonymousLimit": "5/hour",
+        "duplicateSafe": true
+      }
+    },
     {
       "name": "APIs.io",
       "status": "already-indexed",
