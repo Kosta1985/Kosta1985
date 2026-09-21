@@ -4,7 +4,7 @@ Canonical URL: https://directhireagents.com
 Agent Card: https://directhireagents.com/.well-known/agent-card.json  
 Onboarding: https://directhireagents.com/api/v1/onboarding/instructions
 
-## Priority 1 — accountless registry submissions
+## Priority 1 — accountless / free submissions
 
 ### APIs.io Agent Registry
 Status: ready for submission
@@ -17,17 +17,15 @@ POST https://apis.io/api/v1/agents/register
 {"card_url":"https://directhireagents.com/.well-known/agent-card.json"}
 ```
 
-No account or API key is required. Blocked in this session only by the absence of arbitrary external HTTP POST transport.
-
 ### registry.ip402.xyz
-Status: ready for submission  
-Method: MCP `register_agent` or A2A `register-agent`
+Status: ready for submission
+
+MCP tool:
+`register_agent`
 
 ```json
 {"url":"https://directhireagents.com"}
 ```
-
-Blocked here only because this session has no arbitrary external MCP/HTTP write transport.
 
 ### a2aregistry.org
 Status: ready for submission
@@ -40,7 +38,39 @@ POST https://a2aregistry.org/api/agents/register
 {"wellKnownURI":"https://directhireagents.com/.well-known/agent-card.json"}
 ```
 
-Blocked here only because this session has no arbitrary external HTTP POST transport.
+### AIPO.ST
+Status: ready for submission; free; review follows
+
+```text
+POST https://aipo.st/api/submit
+```
+
+```json
+{"url":"https://directhireagents.com"}
+```
+
+Respect its one-product-per-day and deduplication rules.
+
+### TS00 Agent Directory
+Status: ready for sponsored registration
+
+```text
+POST https://agent-directory-416a.onrender.com/register/sponsored
+```
+
+```json
+{
+  "name": "DirectHire",
+  "platforms": [
+    {
+      "platform": "website",
+      "handle": "https://directhireagents.com"
+    }
+  ]
+}
+```
+
+The service sponsors the Base gas itself.
 
 ### Agent Reputation / Agent Hub
 Status: registration shape confirmed; secure owner-token custody required
@@ -62,7 +92,7 @@ https://agentreputation.dev/api/a2a
 }
 ```
 
-No human user account is required. The first registration may return a one-time owner capability token; do not execute until there is a secure place to retain that token.
+Do not execute until one-time owner token storage is available.
 
 ### allagents.app
 Status: ready after current schema fetch
@@ -71,71 +101,53 @@ Status: ready after current schema fetch
 POST https://allagents.app/register
 ```
 
-Declared fields: name, specialty, description, endpoints.  
-Before submission, fetch current docs and use the exact current nested `endpoints` shape.
+Declared fields: name, specialty, description, endpoints.
 
 ### BotMarket
-Status: submission surface discovered; tool-schema review required
+Status: live submission skill discovered; schema review required
 
-https://botmarket.bot/
+https://botmarket.bot/  
+Skill: `submit-agent`
 
-BotMarket exposes `submit-agent` via its agent-native interface. Fetch the live tool schema before execution and do not guess parameters.
+Fetch the live tool schema before execution and do not guess parameters.
 
-## Priority 2 — machine-social distribution
+## Priority 2 — verification/network targets
+
+### Moltbridge
+Status: verification required before registration
+
+Production API:
+https://api.moltbridge.ai
+
+Flow:
+1. Complete `POST /verify` challenge-response.
+2. Receive verification token.
+3. Register with `POST /register`.
+4. Supply Ed25519 public key plus agent identity fields.
+
+Required registration fields:
+`agent_id`, `name`, `platform`, `pubkey`, `verification_token`.
+
+Optional:
+capabilities, clusters, A2A endpoint.
 
 ### M2M Handshake
 Status: compatibility review before registration
 
-Network:
 https://m2mhandshake.com/
-
-Registration:
-```text
-POST https://wwpodbpkfpxpinmorgyq.supabase.co/functions/v1/register
-```
 
 Candidate existing Direct Hire endpoint:
 https://directhireagents.com/a2a/rpc
 
-Do not submit until `endpoint_url` callback semantics are confirmed compatible with the existing Direct Hire A2A interface. No code changes are authorized.
+Do not submit until `endpoint_url` callback semantics are confirmed compatible with the existing A2A interface.
 
 ## Priority 3 — community distribution
 
-### Comunidad IA LATAM
-https://comunidadialatam.org/  
-Language: Spanish  
-Use: technical feedback request around A2A/MCP onboarding and agent discovery.
-
-### OpenClaw Brasil
-https://openclaw.ia.br/comunidade/  
-Discord: https://discord.gg/clawd  
-Language: Portuguese  
-Suggested channel: #portuguese
-
-### Codex Meetings Buenos Aires
-https://www.codex.ar/  
-Language: Spanish  
-Use: project/demo/talk proposal focused on agent-to-agent discovery.
-
-### Data Science Research Perú
-https://www.datascience.pe/  
-https://github.com/DataScienceResearchPeru/ai-community  
-Language: Spanish
-
-### GDG Santa Cruz / AgenTICs
-https://www.gdgsantacruz.org/  
-Language: Spanish
-
-## Secondary ecosystem discovery
-
-- Argentina: ar-agents
-- Colombia: Colombia OpenData MCP
-- Chile: Wasabil MCP
-- Peru: BCRP MCP / PNDA MCP
-- Uruguay: uruguay-mcp / MCP STM Montevideo
-- Ecuador: sri-cli / EcuAPI MCP
-- Paraguay: Paraguay DNCP MCP
-- Venezuela: AETHERIUS / aetheriusxAPI
+- Comunidad IA LATAM — https://comunidadialatam.org/
+- OpenClaw Brasil — https://openclaw.ia.br/comunidade/
+- Codex Meetings Buenos Aires — https://www.codex.ar/
+- Data Science Research Perú — https://www.datascience.pe/
+- GDG Santa Cruz / AgenTICs — https://www.gdgsantacruz.org/
 
 ## Already achieved
 
@@ -146,31 +158,17 @@ Language: Spanish
 - Hype Star listing
 - AgentLair observation
 - Kunlun Yaochi observation
-- Brazil, Argentina, Colombia, Chile, Peru, Uruguay, Ecuador, Paraguay, Bolivia and Venezuela regional discovery pages
-- Portuguese and Spanish discovery surfaces
-- `AGENTS.md`, `llms.txt`, LATAM manifest, registry ingest payload, registry targets, community targets and machine-social guidance
+- Full South America regional discovery layer: Brazil, Argentina, Colombia, Chile, Peru, Uruguay, Ecuador, Paraguay, Bolivia and Venezuela
+- PT-BR and Spanish discovery surfaces
+- Open call for LATAM agents
+- Machine-readable recruitment request
+- `AGENTS.md`, `llms.txt`, LATAM manifest, registry targets, community targets and promotion queue
 
-## Identity prerequisite target
-
-### Agent Identity Registry
-Public registration exists, but it requires a creator DID. Do not fabricate a creator identity/DID just to obtain a listing.
-
-## Paid target — do not execute without explicit authorization
-
-### AI Agent Directory / Conway
-Registration advertises an x402 charge of 0.50 USDC. Do not incur this cost without explicit owner authorization.
-
-## Intentionally excluded
-
-### GopherTools
-Submission requires an email address. Current campaign rule is no email outreach, so this path is excluded unless the rule changes.
-
-## Campaign constraints
+## Constraints
 
 - Do not change Direct Hire application code.
 - No email outreach.
-- Do not mass-spam communities.
-- Do not fabricate partnerships, endorsements, reviews, traffic, users, identity proofs or rankings.
-- Only submit to registries that explicitly invite public agent registration.
-- Do not incur paid submission costs without explicit authorization.
-- Do not create or expose owner tokens without secure token custody.
+- No mass spam.
+- No fabricated partnerships, endorsements, reviews, traffic, users, identity proofs or rankings.
+- No paid submission or blockchain spend without explicit owner authorization.
+- No one-time secrets/tokens without secure custody.
