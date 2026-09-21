@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.7",
+  "schemaVersion": "1.8",
   "campaign": "Direct Hire LATAM promotion execution",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
@@ -272,6 +272,26 @@
       "status": "copy-ready",
       "url": "https://www.gdgsantacruz.org/",
       "language": "es"
+    },
+    {
+      "priority": 2,
+      "target": "AGNTCY Directory",
+      "type": "distributed-agent-directory",
+      "status": "prepared-blocked-by-missing-dirctl-or-directory-mcp-runtime",
+      "url": "https://dir.agntcy.org/",
+      "action": {
+        "plan": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-agntcy-publishing.json",
+        "sourceAgentCard": "https://directhireagents.com/.well-known/agent-card.json",
+        "workflow": [
+          "import-a2a-to-oasf",
+          "enrich",
+          "validate",
+          "dirctl-push",
+          "routing-publish",
+          "verify-discovery"
+        ],
+        "note": "Do not guess OASF taxonomy IDs; use AGNTCY import/enrichment/validation flow."
+      }
     }
   ],
   "excludedTargets": [
