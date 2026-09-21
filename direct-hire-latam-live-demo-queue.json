@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Direct Hire",
+  "checkedAt": "2026-09-21",
+  "opportunities": [
+    {
+      "priority": 1,
+      "city": "São Paulo",
+      "country": "Brazil",
+      "community": "AI Tinkerers SP",
+      "event": "Meetup de Setembro",
+      "date": "2026-09-24",
+      "time": "18:30-22:00",
+      "timezone": "America/Sao_Paulo",
+      "status": "demo-submissions-open",
+      "chapter": "https://saopaulo.aitinkerers.org/",
+      "submissionUrl": "https://lnkd.in/d9Hq329C",
+      "demoPack": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-DEMO-AI-TINKERERS-SP.md"
+    },
+    {
+      "priority": 2,
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "community": "AI Tinkerers Buenos Aires",
+      "status": "active-chapter-no-next-date-confirmed-in-current-index",
+      "chapter": "https://buenos-aires.aitinkerers.org/"
+    },
+    {
+      "priority": 2,
+      "city": "Medellín",
+      "country": "Colombia",
+      "community": "AI Tinkerers Medellín",
+      "event": "AI Tinkerers Medellín #25 — Henkia",
+      "date": "2026-09-24",
+      "time": "18:00-21:00",
+      "timezone": "America/Bogota",
+      "status": "attendance-open-public-speaker-lineup-announced",
+      "chapter": "https://medellin.aitinkerers.org/",
+      "action": "future-demo-watch-no-slot-claim"
+    },
+    {
+      "priority": 3,
+      "city": "Santiago",
+      "country": "Chile",
+      "community": "AI Tinkerers Santiago",
+      "status": "established-chapter-no-upcoming-event-confirmed",
+      "chapter": "https://santiago.aitinkerers.org/"
+    },
+    {
+      "priority": 3,
+      "city": "Lima",
+      "country": "Peru",
+      "community": "AI Tinkerers Lima",
+      "status": "active-recent-chapter-no-next-demo-call-confirmed"
+    }
+  ],
+  "campaignRules": {
+    "noSalesPitch": true,
+    "noUnsolicitedOrganizerSpam": true,
+    "useOfficialDemoSubmissionFlow": true,
+    "noFalseSlotClaims": true
+  }
+}
