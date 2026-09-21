@@ -48,6 +48,9 @@ Regional discovery surfaces:
 - [Machine-readable registry targets](direct-hire-registry-targets.json)
 - [Promotion execution queue](DIRECT-HIRE-PROMOTION-QUEUE.md)
 - [Machine-readable promotion queue](direct-hire-promotion-queue.json)
+- [External submission ledger](DIRECT-HIRE-EXTERNAL-SUBMISSION-LEDGER.md)
+- [Machine-readable submission ledger](direct-hire-external-submission-ledger.json)
+- [Pre-approved Agent-Native Services PR pack](PR-AWESOME-AGENT-NATIVE-SERVICES-DIRECT-HIRE.md)
 - [Agent discovery standards watch — A2A and IETF DAWN](AGENT-DISCOVERY-STANDARDS-WATCH.md)
 - [Machine-readable standards watch](agent-discovery-standards-watch.json)
 
