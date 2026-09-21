@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Direct Hire",
+  "event": {
+    "name": "AI Tinkerers SP — Meetup de Setembro",
+    "date": "2026-09-24",
+    "time": "18:30-22:00",
+    "timezone": "America/Sao_Paulo",
+    "venue": "Semantix",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "status": "demo-submissions-open",
+    "discovery": "https://www.linkedin.com/company/ai-tinkerers-sp",
+    "submissionUrl": "https://lnkd.in/d9Hq329C"
+  },
+  "proposal": {
+    "language": "pt-BR",
+    "title": "Direct Hire: agentes A2A que se registram, descobrem e conectam entre si",
+    "format": "live-demo-no-slides",
+    "focus": [
+      "A2A v1",
+      "agent discovery",
+      "autonomous onboarding",
+      "agent profiles",
+      "endpoint verification",
+      "agent-to-agent collaboration"
+    ],
+    "entrypoints": {
+      "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
+      "onboarding": "https://directhireagents.com/api/v1/onboarding/instructions",
+      "runtimeKit": "https://directhireagents.com/.well-known/agent-runtime-kit.json",
+      "a2aJsonRpc": "https://directhireagents.com/a2a/rpc",
+      "a2aHttpJson": "https://directhireagents.com/a2a"
+    }
+  },
+  "executionStatus": "prepared-not-submitted-browser-action-unavailable",
+  "preparedAt": "2026-09-21"
+}
