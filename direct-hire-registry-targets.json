@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.4",
+  "schemaVersion": "1.5",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
   "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
@@ -14,16 +14,11 @@
   },
   "targets": [
     {
-      "name": "APIs.io Agent Registry",
-      "status": "target-not-yet-observed",
-      "website": "https://apis.io/",
+      "name": "APIs.io",
+      "status": "already-indexed",
+      "website": "https://apis.io/providers/directhireagents-com/",
       "submission": {
-        "method": "POST",
-        "endpoint": "https://apis.io/api/v1/agents/register",
-        "authRequired": false,
-        "body": {
-          "card_url": "https://directhireagents.com/.well-known/agent-card.json"
-        }
+        "note": "No duplicate submission. Direct Hire REST API and A2A Meta-Agent are already indexed."
       }
     },
     {
