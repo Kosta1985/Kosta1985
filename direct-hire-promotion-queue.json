@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.6",
+  "schemaVersion": "1.7",
   "campaign": "Direct Hire LATAM promotion execution",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
@@ -42,15 +42,12 @@
       "priority": 1,
       "target": "a2aregistry.org",
       "type": "registry",
-      "status": "ready-blocked-by-missing-external-write-transport",
+      "status": "already-registered-public-lookup-issue",
       "action": {
-        "protocol": "HTTP",
-        "method": "POST",
-        "endpoint": "https://a2aregistry.org/api/agents/register",
-        "body": {
-          "wellKnownURI": "https://directhireagents.com/.well-known/agent-card.json"
-        }
-      }
+        "note": "Do not duplicate. Existing record is confirmed; only host lookup/index visibility remains unresolved."
+      },
+      "agentId": "d0233090-4395-4933-9347-a6c6d6328792",
+      "issue": "https://github.com/prassanna-ravishankar/a2a-registry/issues/186"
     },
     {
       "priority": 1,
