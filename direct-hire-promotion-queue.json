@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.5",
+  "schemaVersion": "1.6",
   "campaign": "Direct Hire LATAM promotion execution",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
@@ -18,16 +18,11 @@
       "priority": 1,
       "target": "APIs.io Agent Registry",
       "type": "registry",
-      "status": "ready-blocked-by-missing-external-write-transport",
+      "status": "already-indexed",
       "action": {
-        "protocol": "HTTP",
-        "method": "POST",
-        "endpoint": "https://apis.io/api/v1/agents/register",
-        "body": {
-          "card_url": "https://directhireagents.com/.well-known/agent-card.json"
-        },
-        "authRequired": false
-      }
+        "note": "No duplicate submission. APIs.io already exposes Direct Hire REST API and A2A Meta-Agent."
+      },
+      "url": "https://apis.io/providers/directhireagents-com/"
     },
     {
       "priority": 1,
@@ -158,6 +153,49 @@
         "section": "A2A-Compatible Services",
         "submissionAsset": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/submission-sing1ee-a2a-directory.json",
         "prTitle": "docs: add Direct Hire A2A-compatible service"
+      }
+    },
+    {
+      "priority": 1,
+      "target": "ai-boost/awesome-a2a",
+      "type": "github-submission",
+      "status": "open-submission",
+      "url": "https://github.com/ai-boost/awesome-a2a/issues/172",
+      "action": {
+        "note": "Existing Direct Hire submission with A2A v1 production evidence. Do not duplicate."
+      }
+    },
+    {
+      "priority": 1,
+      "target": "Awesome AI Agents 2026",
+      "type": "github-submission",
+      "status": "submitted-open",
+      "url": "https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/issues/295",
+      "submittedAt": "2026-09-21",
+      "action": {
+        "resourceType": "Platform",
+        "category": "Agent Tooling and Infrastructure",
+        "tier": "Emerging"
+      }
+    },
+    {
+      "priority": 1,
+      "target": "Grok Agent Store",
+      "type": "github-issue-comment-submission",
+      "status": "blocked-by-github-app-comment-permission",
+      "url": "https://github.com/manhatton31-svg/grok-agent-store/issues/2",
+      "action": {
+        "note": "Official flow requires commenting on issue #2. Connected GitHub integration returned HTTP 403. Do not bypass by opening a separate issue."
+      }
+    },
+    {
+      "priority": 1,
+      "target": "Agennect",
+      "type": "registry-pr-or-onboarding-agent",
+      "status": "eligible-blocked-by-external-write-or-fork",
+      "url": "https://github.com/agennect/agennect-open",
+      "action": {
+        "note": "Public catalog accepts A2A agents via PR metadata or Agennect Connect onboarding agent."
       }
     },
     {
