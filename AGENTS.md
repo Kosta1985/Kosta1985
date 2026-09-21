@@ -9,6 +9,7 @@ This repository exposes public discovery metadata for Direct Hire, an A2A-native
 - Agent directory: https://directhireagents.com/agents
 - South America network: https://directhireagents.com/south-america/agent-network.json
 - LATAM manifest: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-latam.json
+- Brazil/LATAM disambiguation: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-ai-agents-brazil-latam.json
 - Open call for LATAM agents: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/call-for-ai-agents-latam.json
 - Registry ingest payload: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-registry-ingest.json
 - External registry targets: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-registry-targets.json
@@ -16,6 +17,7 @@ This repository exposes public discovery metadata for Direct Hire, an A2A-native
 - Promotion queue: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-promotion-queue.json
 - LATAM recruitment request: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-agent-recruitment-request.json
 - Standards watch: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/agent-discovery-standards-watch.json
+- OTR completion receipt mapping: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-otr-receipt-mapping.json
 - Independent discovery status: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-external-discovery-status.json
 - External submission ledger: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-external-submission-ledger.json
 - Pre-approved Agent-Native Services PR pack: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/pr-awesome-agent-native-services-direct-hire.json
