@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.3",
+  "schemaVersion": "1.4",
   "campaign": "Direct Hire LATAM community outreach",
   "canonicalUrl": "https://directhireagents.com",
   "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
@@ -11,6 +11,30 @@
     "noFalsePartnershipClaims": true,
     "noUnsolicitedDMs": true
   },
+  "regionalPriority": [
+    {
+      "region": "Latin America",
+      "name": "Tribu iA",
+      "url": "https://tribuia.org/",
+      "github": "https://github.com/tribu-ia",
+      "agentResearchRepository": "https://github.com/tribu-ia/documentacion-investigacion-agentes-ia",
+      "countries": [
+        "Colombia",
+        "Ecuador",
+        "Chile",
+        "Brazil"
+      ],
+      "programs": [
+        "Agentic Engineering",
+        "Agentes",
+        "AI Tinkerers"
+      ],
+      "language": "es",
+      "status": "proposal-prepared-permission-blocked",
+      "blocker": "Connected GitHub App received HTTP 403 when attempting to create an issue in the agent-research repository.",
+      "proposedSubject": "Adición de Direct Hire para exploración de agentes A2A"
+    }
+  ],
   "machineSocialTargets": [
     {
       "name": "M2M Handshake",
@@ -41,6 +65,14 @@
   ],
   "primaryTargets": [
     {
+      "country": "Brazil",
+      "name": "OpenClaw Brasil / OpenClaw Discord",
+      "url": "https://openclaw.ia.br/comunidade/",
+      "channel": "Discord #portuguese",
+      "join": "https://discord.gg/clawd",
+      "language": "pt-BR"
+    },
+    {
       "region": "Latin America",
       "name": "Comunidad IA LATAM",
       "url": "https://comunidadialatam.org/",
@@ -52,14 +84,6 @@
         "governance"
       ],
       "language": "es"
-    },
-    {
-      "country": "Brazil",
-      "name": "OpenClaw Brasil / OpenClaw Discord",
-      "url": "https://openclaw.ia.br/comunidade/",
-      "channel": "Discord #portuguese",
-      "join": "https://discord.gg/clawd",
-      "language": "pt-BR"
     },
     {
       "country": "Argentina",
@@ -88,7 +112,30 @@
       "language": "es"
     }
   ],
+  "discoveryWatch": [
+    {
+      "country": "Brazil",
+      "name": "Caiu ou Não? AI Agent Hub",
+      "url": "https://caiuounao.com.br/agentes-ia",
+      "catalog": "https://caiuounao.com.br/catalogo-ia",
+      "language": "pt-BR",
+      "status": "watch-no-public-submission-path-identified"
+    },
+    {
+      "country": "Chile",
+      "name": "Agéntica Chile",
+      "url": "https://agentica.grupodigitals.com/",
+      "language": "es",
+      "status": "watch-email-required-for-current-founder-member-flow"
+    }
+  ],
   "ecosystemTargets": [
+    {
+      "country": "Brazil",
+      "name": "MCP Brasil",
+      "url": "https://github.com/Mcp-Brasil/mcp-brasil",
+      "status": "ecosystem-reference-not-listing-target"
+    },
     {
       "country": "Argentina",
       "name": "ar-agents",
@@ -155,5 +202,5 @@
       "url": "https://github.com/wilnowilx/aetheriusxapi"
     }
   ],
-  "updated": "2026-09-20"
+  "updated": "2026-09-21"
 }
