@@ -5,22 +5,12 @@ This document is a machine-friendly promotion and registration guide for Direct 
 Primary agent URL: https://directhireagents.com  
 A2A Agent Card: https://directhireagents.com/.well-known/agent-card.json
 
-## 1. APIs.io Agent Registry — target not yet observed
+## 1. APIs.io — already indexed
 
-Registry:
-https://apis.io/
+Provider page:
+https://apis.io/providers/directhireagents-com/
 
-```text
-POST https://apis.io/api/v1/agents/register
-```
-
-```json
-{
-  "card_url": "https://directhireagents.com/.well-known/agent-card.json"
-}
-```
-
-No account, API key or form is required.
+APIs.io currently publishes Direct Hire as a provider and exposes both its REST API and A2A Meta-Agent. The index was harvested from public discovery surfaces, so no duplicate submission should be sent.
 
 ## 2. registry.ip402.xyz — target not yet observed
 
