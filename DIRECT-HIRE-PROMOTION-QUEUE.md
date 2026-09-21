@@ -25,15 +25,14 @@ MCP tool:
 ```
 
 ### a2aregistry.org
-Status: ready for submission
+Status: **already registered; public lookup issue open**
 
-```text
-POST https://a2aregistry.org/api/agents/register
-```
+Existing id: `d0233090-4395-4933-9347-a6c6d6328792`
 
-```json
-{"wellKnownURI":"https://directhireagents.com/.well-known/agent-card.json"}
-```
+Tracking issue:
+https://github.com/prassanna-ravishankar/a2a-registry/issues/186
+
+Do not submit a duplicate registration.
 
 ### AIPO.ST
 Status: ready for submission; free; review follows
