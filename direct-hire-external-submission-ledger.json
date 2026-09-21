@@ -28,11 +28,12 @@
     },
     {
       "target": "Awesome Agent-Native Services",
-      "status": "maintainer-go-pr-requested",
+      "status": "maintainer-approved-pr-requested",
       "issue": "https://github.com/haoruilee/awesome-agent-native-services/issues/151",
       "category": "Agent Social & Community",
       "prPack": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/pr-awesome-agent-native-services-direct-hire.json",
-      "blocker": "upstream push=false and no fork action available"
+      "blocker": "upstream push=false and no fork action available",
+      "repositoryCorrectionComment": "https://github.com/haoruilee/awesome-agent-native-services/issues/151#issuecomment-5757306363"
     }
   ],
   "openSubmissions": [
