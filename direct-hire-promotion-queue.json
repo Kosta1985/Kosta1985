@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.8",
+  "schemaVersion": "1.9",
   "campaign": "Direct Hire LATAM promotion execution",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
@@ -14,6 +14,68 @@
     "secureSecretCustodyRequired": true
   },
   "queue": [
+    {
+      "target": "jishie",
+      "priority": 2,
+      "type": "agent-market-index",
+      "status": "a2a-supported-schema-review-before-write",
+      "url": "https://jishie.com/",
+      "action": {
+        "protocol": "HTTP",
+        "method": "POST",
+        "endpoint": "https://jishie.com/v1/agents",
+        "note": "A2A endpoint is supported, but exact JSON field name was not independently recovered in this runtime. Do not guess."
+      }
+    },
+    {
+      "target": "Neuronto ARD Registry",
+      "priority": 2,
+      "type": "ard-registry",
+      "status": "manifest-build-preflight-only-no-production-ard-file",
+      "url": "https://neuronto.com/",
+      "action": {
+        "protocol": "HTTP",
+        "method": "POST",
+        "endpoint": "https://neuronto.com/manifest/build",
+        "body": {
+          "domain": "directhireagents.com"
+        },
+        "note": "Preflight only; do not claim registry publication without an accepted no-site-change listing path."
+      }
+    },
+    {
+      "target": "brick.blue",
+      "priority": 1,
+      "type": "registry",
+      "status": "ready-blocked-by-missing-external-mcp-write-transport",
+      "url": "https://brick.blue/",
+      "action": {
+        "protocol": "MCP",
+        "endpoint": "https://brick.blue/mcp",
+        "tool": "register_agent",
+        "arguments": {
+          "url": "https://directhireagents.com/.well-known/agent-card.json"
+        },
+        "cost": "0"
+      }
+    },
+    {
+      "target": "Wellknown",
+      "priority": 1,
+      "type": "registry",
+      "status": "ready-blocked-by-missing-external-write-transport",
+      "url": "https://wellknown.network/",
+      "action": {
+        "protocol": "HTTP",
+        "method": "POST",
+        "endpoint": "https://wellknown.network/api/v1/submit",
+        "body": {
+          "cardUrl": "https://directhireagents.com/.well-known/agent-card.json"
+        },
+        "authRequired": false,
+        "duplicateSafe": true
+      }
+    },
     {
       "priority": 1,
       "target": "APIs.io Agent Registry",
