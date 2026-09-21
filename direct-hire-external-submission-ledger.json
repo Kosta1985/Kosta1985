@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
   "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
@@ -9,6 +9,11 @@
       "target": "APIs.io",
       "status": "indexed",
       "url": "https://apis.io/providers/directhireagents-com/"
+    },
+    {
+      "target": "API Evangelist",
+      "status": "organically-indexed-profiled",
+      "url": "https://github.com/api-evangelist/directhireagents-com"
     },
     {
       "target": "Global A2A Registry",
@@ -26,7 +31,8 @@
       "status": "maintainer-go-pr-requested",
       "issue": "https://github.com/haoruilee/awesome-agent-native-services/issues/151",
       "category": "Agent Social & Community",
-      "prPack": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/pr-awesome-agent-native-services-direct-hire.json"
+      "prPack": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/pr-awesome-agent-native-services-direct-hire.json",
+      "blocker": "upstream push=false and no fork action available"
     }
   ],
   "openSubmissions": [
@@ -61,7 +67,9 @@
     {
       "target": "Awesome AI Agents 2026",
       "issue": "https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/issues/295",
-      "submittedAt": "2026-09-21"
+      "submittedAt": "2026-09-21",
+      "status": "open-needs-agent-submission-label",
+      "maintainerCommentPosted": true
     }
   ],
   "closed": [
@@ -73,6 +81,12 @@
     }
   ],
   "blocked": [
+    {
+      "target": "Tribu iA Agentes",
+      "reason": "GitHub App received HTTP 403 on issue creation",
+      "url": "https://github.com/tribu-ia/documentacion-investigacion-agentes-ia",
+      "proposalStatus": "prepared-not-submitted"
+    },
     {
       "target": "sing1ee/a2a-directory",
       "reason": "fork action unavailable",
