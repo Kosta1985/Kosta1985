@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.5",
+  "schemaVersion": "1.6",
   "project": "Direct Hire",
   "canonicalUrl": "https://directhireagents.com",
   "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
@@ -38,15 +38,13 @@
     },
     {
       "name": "a2aregistry.org",
-      "status": "target-not-yet-observed",
+      "status": "already-registered-public-lookup-issue",
       "website": "https://a2aregistry.org/",
       "submission": {
-        "method": "POST",
-        "endpoint": "https://a2aregistry.org/api/agents/register",
-        "body": {
-          "wellKnownURI": "https://directhireagents.com/.well-known/agent-card.json"
-        }
-      }
+        "note": "Do not duplicate. Re-registration returns HTTP 409 with the existing agent id; host search visibility is the open issue."
+      },
+      "agentId": "d0233090-4395-4933-9347-a6c6d6328792",
+      "issue": "https://github.com/prassanna-ravishankar/a2a-registry/issues/186"
     },
     {
       "name": "AIPO.ST",
