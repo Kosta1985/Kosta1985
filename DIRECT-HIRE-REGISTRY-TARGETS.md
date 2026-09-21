@@ -57,7 +57,25 @@ POST https://a2aregistry.org/api/agents/register
 }
 ```
 
-## 4. Agent Reputation / Agent Hub — target not yet observed
+## 4. AIPO.ST — free AI product submission target
+
+https://aipo.st/submit-agent
+
+AIPO.ST publishes an A2A submit agent and documents a free JSON submission flow. The minimal submission is the Direct Hire product URL; AIPO.ST extracts the product name, tagline, icon and keywords, then places the listing into review.
+
+Submission endpoint:
+https://aipo.st/api/submit
+
+Minimal input:
+```json
+{
+  "url": "https://directhireagents.com"
+}
+```
+
+Respect its one-product-per-day and deduplication rules.
+
+## 5. Agent Reputation / Agent Hub — target not yet observed
 
 https://agentreputation.dev/
 
@@ -83,9 +101,32 @@ Minimal confirmed call shape:
 }
 ```
 
-Registration itself requires no user account. The first native registration returns an owner capability token if one is not supplied; it is shown once and must be stored securely for future updates. Therefore automated execution must not proceed unless secure token custody is available.
+Registration itself requires no user account. The first native registration may return an owner capability token; do not execute unless secure token custody is available.
 
-## 5. allagents.app — target not yet observed
+## 6. TS00 Agent Directory — free sponsored registration
+
+Project:
+https://github.com/TS00/agent-directory
+
+The registry supports `POST /register/sponsored` and pays the Base registration gas itself. It accepts a generic `website` platform, so Direct Hire can be listed using its canonical URL.
+
+Confirmed payload shape:
+
+```json
+{
+  "name": "DirectHire",
+  "platforms": [
+    {
+      "platform": "website",
+      "handle": "https://directhireagents.com"
+    }
+  ]
+}
+```
+
+The name must be 2-32 characters and contain only letters, numbers, underscores or hyphens.
+
+## 7. allagents.app — target not yet observed
 
 https://allagents.app/
 
@@ -98,47 +139,61 @@ Declared fields:
 
 Fetch the current schema before submission rather than guessing the nested `endpoints` shape.
 
-## 6. BotMarket — submission surface discovered
+## 8. BotMarket — submission surface discovered
 
 https://botmarket.bot/
 
-BotMarket is MCP + A2A native and exposes a `submit-agent` skill for adding an AI agent or MCP server. Direct Hire was not observed in the current indexed results.
+BotMarket is MCP + A2A native and exposes a `submit-agent` skill for adding an AI agent or MCP server.
 
 Status: submission-schema review required before execution. Do not invent parameters; fetch the live tool schema first.
 
-## 7. Global A2A Registry — already listed
+## 9. Moltbridge — professional agent network
+
+https://moltbridge.ai/
+
+Moltbridge provides capability discovery, credibility packets and agent-to-agent network intelligence. Registration is not a one-call listing: the agent must first complete the public `/verify` challenge-response flow and receive a verification token, then call `/register`.
+
+Production API:
+https://api.moltbridge.ai
+
+Registration requires at least:
+`agent_id`, `name`, `platform`, `pubkey`, `verification_token`.
+
+It also supports optional capabilities, clusters and an A2A endpoint. Treat this as a verification-required professional network target rather than an immediate registry POST.
+
+## 10. Global A2A Registry — already listed
 
 https://www.a2a-registry.org/agent/com.directhireagents.direct_hire_agent_directory
 
-## 8. AgentHermes — already indexed
+## 11. AgentHermes — already indexed
 
 https://agenthermes.ai/registry
 
-## 9. Agent Tools Cloud — already indexed
+## 12. Agent Tools Cloud — already indexed
 
 https://agent-tools.cloud/a2a?q=self-registration
 
-## 10. Agenstry — already indexed
+## 13. Agenstry — already indexed
 
 https://agenstry.com/providers/Direct%20Hire
 
-## 11. Hype Star — already listed
+## 14. Hype Star — already listed
 
 https://hypestar.org/project/direct-hire
 
-## 12. AgentLair — already observed
+## 15. AgentLair — already observed
 
 https://agentlair.dev/leaderboard/a2a
 
-## 13. Kunlun Yaochi — already observed
+## 16. Kunlun Yaochi — already observed
 
 https://kunlunyaochi.com/
 
-## 14. a2alist.ai — target
+## 17. a2alist.ai — target
 
 https://a2alist.ai/
 
-## 15. agents.ml — target
+## 18. agents.ml — target
 
 https://agents.ml/
 
@@ -148,7 +203,7 @@ https://agents.ml/
 
 https://agentidentityregistry.org/
 
-The registry exposes public agent registration but requires a creator DID. Do not fabricate an identity or creator DID merely to obtain a listing. Treat this as a future identity-layer target once a valid Direct Hire creator DID is intentionally established.
+The registry exposes public agent registration but requires a creator DID. Do not fabricate an identity or creator DID merely to obtain a listing.
 
 ## Paid target — requires explicit spend authorization
 
