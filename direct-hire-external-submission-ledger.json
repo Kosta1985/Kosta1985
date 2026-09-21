@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Direct Hire",
+  "canonicalUrl": "https://directhireagents.com",
+  "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
+  "reconciledAt": "2026-09-21",
+  "achieved": [
+    {
+      "target": "APIs.io",
+      "status": "indexed",
+      "url": "https://apis.io/providers/directhireagents-com/"
+    },
+    {
+      "target": "Global A2A Registry",
+      "status": "listed",
+      "url": "https://www.a2a-registry.org/agent/com.directhireagents.direct_hire_agent_directory"
+    },
+    {
+      "target": "a2aregistry.org",
+      "status": "registered-lookup-issue",
+      "agentId": "d0233090-4395-4933-9347-a6c6d6328792",
+      "issue": "https://github.com/prassanna-ravishankar/a2a-registry/issues/186"
+    },
+    {
+      "target": "Awesome Agent-Native Services",
+      "status": "maintainer-go-pr-requested",
+      "issue": "https://github.com/haoruilee/awesome-agent-native-services/issues/151",
+      "category": "Agent Social & Community",
+      "prPack": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/pr-awesome-agent-native-services-direct-hire.json"
+    }
+  ],
+  "openSubmissions": [
+    {
+      "target": "ai-boost/awesome-a2a",
+      "issue": "https://github.com/ai-boost/awesome-a2a/issues/172"
+    },
+    {
+      "target": "isekOS/awesome-a2a-agents",
+      "issue": "https://github.com/isekOS/awesome-a2a-agents/issues/26"
+    },
+    {
+      "target": "aloth/awesome-ai-agents",
+      "issue": "https://github.com/aloth/awesome-ai-agents/issues/85"
+    },
+    {
+      "target": "EvoMap/awesome-agent-evolution",
+      "issue": "https://github.com/EvoMap/awesome-agent-evolution/issues/65"
+    },
+    {
+      "target": "Ultimate Agent Directory",
+      "issue": "https://github.com/moshehbenavraham/Ultimate-Agent-Directory/issues/111"
+    },
+    {
+      "target": "sandbaseai/awesome-agent-runtime",
+      "issue": "https://github.com/sandbaseai/awesome-agent-runtime/issues/17"
+    },
+    {
+      "target": "awesome-ai-agent-tools",
+      "issue": "https://github.com/michielhdoteth/awesome-ai-agent-tools/issues/40"
+    },
+    {
+      "target": "Awesome AI Agents 2026",
+      "issue": "https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/issues/295",
+      "submittedAt": "2026-09-21"
+    }
+  ],
+  "closed": [
+    {
+      "target": "pab1it0/awesome-a2a",
+      "issue": "https://github.com/pab1it0/awesome-a2a/issues/92",
+      "status": "closed-not-planned",
+      "resubmit": false
+    }
+  ],
+  "blocked": [
+    {
+      "target": "sing1ee/a2a-directory",
+      "reason": "fork action unavailable",
+      "submissionAsset": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/submission-sing1ee-a2a-directory.json"
+    },
+    {
+      "target": "Grok Agent Store",
+      "reason": "GitHub App cannot comment in official submission issue",
+      "url": "https://github.com/manhatton31-svg/grok-agent-store/issues/2"
+    },
+    {
+      "target": "Agennect",
+      "reason": "requires external write or fork/PR",
+      "url": "https://github.com/agennect/agennect-open"
+    },
+    {
+      "target": "Agent Switchboard",
+      "reason": "no-code submit requests email; PR requires fork",
+      "url": "https://agentswitchboard.dev/"
+    }
+  ],
+  "campaignRules": {
+    "noEmail": true,
+    "noSpam": true,
+    "noDuplicateSubmissions": true,
+    "noFalseAcceptanceClaims": true
+  }
+}
