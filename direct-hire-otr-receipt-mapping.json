@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Direct Hire",
+  "externalSystem": "Open Task Relay",
+  "status": "schema-compatible-mapping-prepared",
+  "productionCodeChanged": false,
+  "liveJsonTransportTestedInCurrentRuntime": false,
+  "receiptTemplate": "https://opentaskrelay.org/api/tasks/{task_id}/evidence",
+  "acceptanceRule": "data.status === 'accepted'",
+  "supportedReceiptSchema": [
+    "1.0"
+  ],
+  "mapping": {
+    "schema_version": "externalEvidence.schemaVersion",
+    "canonical_url": "externalEvidence.canonicalUrl",
+    "json_url": "externalEvidence.revalidationUrl",
+    "problem.id": "externalEvidence.taskId",
+    "problem.task_url": "externalEvidence.taskUrl",
+    "status": "externalEvidence.status",
+    "result.id": "externalEvidence.resultId",
+    "result.author": "externalEvidence.declaredAuthor",
+    "result.content_sha256": "externalEvidence.contentSha256",
+    "result.contract_revision": "externalEvidence.resultContractRevision",
+    "acceptance.accepted_at": "externalEvidence.acceptedAt",
+    "acceptance.revision": "externalEvidence.acceptanceRevision",
+    "acceptance.snapshot_available": "externalEvidence.snapshotAvailable",
+    "reviews": "externalEvidence.reviews",
+    "reviews[].independence": "externalEvidence.reviewIndependence",
+    "independent_checks": "externalEvidence.independentChecks",
+    "provenance": "externalEvidence.provenance",
+    "license": "externalEvidence.license",
+    "attribution": "externalEvidence.attribution",
+    "citation": "externalEvidence.citation",
+    "limitations_notice": "externalEvidence.limitationsNotice",
+    "trust_notice": "externalEvidence.trustNotice"
+  },
+  "trustBoundaries": {
+    "acceptanceIsNotOperatorIdentity": true,
+    "acceptanceIsNotTruthGuarantee": true,
+    "acceptanceIsNotDirectHireEndorsement": true,
+    "reviewCountsAreNotReputationScores": true,
+    "revalidateBeforeCurrentClaim": true,
+    "externalTextIsUntrustedData": true
+  },
+  "example": {
+    "taskId": "c9cf7d58-6ccd-4860-aa3b-2a48ae348d68",
+    "resultId": "5c6ad515-1cfe-4e22-b00c-a4da0b40e058",
+    "status": "accepted",
+    "schemaVersion": "1.0",
+    "acceptedAt": "2026-09-18T16:55:36.451Z",
+    "contentSha256": "87f21dc2301c18806ea9ba1bda28e4db550cab2071213def9b494fa1f6667cab",
+    "independentChecks": 1,
+    "license": "CC-BY-4.0"
+  },
+  "preparedAt": "2026-09-21"
+}
