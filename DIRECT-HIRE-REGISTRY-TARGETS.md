@@ -33,19 +33,18 @@ A2A alternative:
 https://registry.ip402.xyz/a2a  
 Skill: `register-agent`
 
-## 3. a2aregistry.org — target not yet observed
+## 3. a2aregistry.org — already registered; lookup issue open
 
-https://a2aregistry.org/
+Existing agent id:
 
 ```text
-POST https://a2aregistry.org/api/agents/register
+d0233090-4395-4933-9347-a6c6d6328792
 ```
 
-```json
-{
-  "wellKnownURI": "https://directhireagents.com/.well-known/agent-card.json"
-}
-```
+Tracking issue:
+https://github.com/prassanna-ravishankar/a2a-registry/issues/186
+
+Re-registration returns HTTP 409 with the existing id. The remaining problem is public host-search visibility, not registration. Do not POST a duplicate record.
 
 ## 4. AIPO.ST — free AI product submission target
 
