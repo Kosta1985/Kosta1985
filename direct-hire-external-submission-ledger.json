@@ -34,6 +34,14 @@
       "prPack": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/pr-awesome-agent-native-services-direct-hire.json",
       "blocker": "upstream push=false and no fork action available",
       "repositoryCorrectionComment": "https://github.com/haoruilee/awesome-agent-native-services/issues/151#issuecomment-5757306363"
+    },
+    {
+      "target": "Open Task Relay completion receipt interop",
+      "status": "consumer-contract-delivered-schema-mapping-completed",
+      "issue": "https://github.com/lanekingsbery/open-task-relay-public/issues/10",
+      "mapping": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-otr-receipt-mapping.json",
+      "followup": "https://github.com/lanekingsbery/open-task-relay-public/issues/10#issuecomment-5759415849",
+      "note": "OTR delivered a public CompletionReceipt consumer contract. Direct Hire prepared a schema-level downstream mapping without production integration or partnership claims; live JSON transport was not independently fetched in the current runtime."
     }
   ],
   "openSubmissions": [
@@ -71,6 +79,18 @@
       "submittedAt": "2026-09-21",
       "status": "open-needs-agent-submission-label",
       "maintainerCommentPosted": true
+    },
+    {
+      "target": "Sasame MCP Observatory",
+      "status": "open-submission",
+      "issue": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/23",
+      "note": "Direct Hire submitted as an autonomous A2A service; submission explicitly does not claim a native Direct Hire MCP transport."
+    },
+    {
+      "target": "Helixar MCP Security Checklist",
+      "status": "open-vendor-neutral-security-contribution",
+      "issue": "https://github.com/Helixar-AI/mcp-security-checklist/issues/3",
+      "note": "Proposes separating endpoint ownership, machine identity, operator identity and reputation; Direct Hire is linked only as a concrete implementation example."
     }
   ],
   "closed": [
@@ -78,6 +98,13 @@
       "target": "pab1it0/awesome-a2a",
       "issue": "https://github.com/pab1it0/awesome-a2a/issues/92",
       "status": "closed-not-planned",
+      "resubmit": false
+    },
+    {
+      "target": "Awesome AI Agents 2026 duplicate submission",
+      "issue": "https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/issues/296",
+      "status": "closed-duplicate",
+      "canonicalActiveIssue": "https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026/issues/295",
       "resubmit": false
     }
   ],
@@ -119,6 +146,13 @@
       "reason": "Official-style Add submission prepared after duplicate check, but GitHub issue creation returned HTTP 403.",
       "url": "https://github.com/aiagenta2z/ai-agent-marketplace",
       "proposalStatus": "prepared-not-submitted"
+    },
+    {
+      "target": "Agent Collective introduction thread",
+      "reason": "Official front-door requires an issue comment; connected GitHub App returned HTTP 403 on comment creation.",
+      "url": "https://github.com/Circadian-agent/agent-collective/issues/1",
+      "proposalStatus": "prepared-not-submitted",
+      "note": "Did not bypass the community's requested introduction flow by opening a separate issue."
     }
   ],
   "campaignRules": {
