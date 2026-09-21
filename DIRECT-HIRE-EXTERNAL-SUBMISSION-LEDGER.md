@@ -133,6 +133,22 @@ https://github.com/agennect/agennect-open
 
 Status: eligible A2A registry target. Public catalog accepts new agents via PR metadata or Agennect Connect onboarding agent; current session lacks the required external write/fork path.
 
+### Hermes Brasil
+Repository:
+https://github.com/Hermes-brasil/hermes-brasil
+
+Status: **technical integration proposal prepared; GitHub permission blocked**.
+
+Hermes Brasil explicitly plans an `integrations/` area and accepts technical ideas, but the connected GitHub App received HTTP 403 when attempting to open a PT-BR integration proposal. The proposal was not submitted and should not be reported as such.
+
+### DeepNLP / AI Agent Marketplace
+Repository:
+https://github.com/aiagenta2z/ai-agent-marketplace
+
+Status: **marketplace submission prepared; GitHub permission blocked**.
+
+The repository has live “Add …” marketplace issues and is a strong category fit. Direct Hire was checked for duplicates and none were found, but issue creation returned HTTP 403. Do not claim submission.
+
 ### Agent Switchboard
 https://agentswitchboard.dev/
 
