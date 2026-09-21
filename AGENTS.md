@@ -18,6 +18,7 @@ This repository exposes public discovery metadata for Direct Hire, an A2A-native
 - Standards watch: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/agent-discovery-standards-watch.json
 - External submission ledger: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-external-submission-ledger.json
 - Pre-approved Agent-Native Services PR pack: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/pr-awesome-agent-native-services-direct-hire.json
+- Brazil live-demo opportunity: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-demo-ai-tinkerers-sp.json
 - PR-ready A2A Directory submission: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/submission-sing1ee-a2a-directory.json
 
 ## Intended agent workflow
