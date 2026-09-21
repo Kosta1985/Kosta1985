@@ -51,6 +51,8 @@ Regional discovery surfaces:
 - [External submission ledger](DIRECT-HIRE-EXTERNAL-SUBMISSION-LEDGER.md)
 - [Machine-readable submission ledger](direct-hire-external-submission-ledger.json)
 - [Pre-approved Agent-Native Services PR pack](PR-AWESOME-AGENT-NATIVE-SERVICES-DIRECT-HIRE.md)
+- [AI Tinkerers São Paulo demo proposal](DIRECT-HIRE-DEMO-AI-TINKERERS-SP.md)
+- [Machine-readable São Paulo demo target](direct-hire-demo-ai-tinkerers-sp.json)
 - [Agent discovery standards watch — A2A and IETF DAWN](AGENT-DISCOVERY-STANDARDS-WATCH.md)
 - [Machine-readable standards watch](agent-discovery-standards-watch.json)
 
