@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.4",
+  "schemaVersion": "1.5",
   "campaign": "Direct Hire LATAM community outreach",
   "canonicalUrl": "https://directhireagents.com",
   "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
@@ -202,5 +202,23 @@
       "url": "https://github.com/wilnowilx/aetheriusxapi"
     }
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-21",
+  "upcomingOpportunities": [
+    {
+      "country": "Brazil",
+      "city": "São Paulo",
+      "name": "AI Tinkerers SP — Meetup de Setembro",
+      "date": "2026-09-24",
+      "time": "18:30-22:00",
+      "timezone": "America/Sao_Paulo",
+      "venue": "Semantix",
+      "status": "demo-submissions-open",
+      "audience": "AI builders / live demos",
+      "publicChapter": "https://saopaulo.aitinkerers.org/",
+      "discovery": "https://www.linkedin.com/company/ai-tinkerers-sp",
+      "submissionUrl": "https://lnkd.in/d9Hq329C",
+      "campaignStatus": "demo-pack-prepared-not-submitted-no-email-browser-flow",
+      "demoPack": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-demo-ai-tinkerers-sp.json"
+    }
+  ]
 }
