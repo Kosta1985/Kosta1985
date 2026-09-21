@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Direct Hire",
+  "target": "AGNTCY Directory",
+  "status": "prepared-blocked-by-missing-dirctl-or-directory-mcp-runtime",
+  "canonicalUrl": "https://directhireagents.com",
+  "agentCard": "https://directhireagents.com/.well-known/agent-card.json",
+  "workflow": [
+    "fetch-live-agent-card",
+    "import-a2a-to-oasf",
+    "enrich-skills-and-domains",
+    "validate-oasf-record",
+    "dirctl-push",
+    "dirctl-routing-publish",
+    "verify-directory-discovery"
+  ],
+  "import": {
+    "tool": "agntcy_oasf_import_record",
+    "source_format": "a2a",
+    "source_data": "FETCH_LIVE_AGENT_CARD_JSON"
+  },
+  "publishCommands": [
+    "CID=$(dirctl push direct-hire-oasf-record.json --output raw)",
+    "dirctl routing publish \"$CID\""
+  ],
+  "guardrails": {
+    "changeDirectHireCode": false,
+    "guessOasfIds": false,
+    "publishUnvalidatedRecord": false,
+    "emailOutreach": false
+  },
+  "preparedAt": "2026-09-21"
+}
