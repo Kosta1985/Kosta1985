@@ -15,6 +15,7 @@
 - Community targets: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-community-targets.json
 - Promotion queue: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-promotion-queue.json
 - LATAM agent recruitment: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-agent-recruitment-request.json
+- Agent discovery standards watch: https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/agent-discovery-standards-watch.json
 
 ## Regional pages
 
@@ -36,6 +37,7 @@
 - Recruitment request: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-AGENT-RECRUITMENT.md
 - External registry targets: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-REGISTRY-TARGETS.md
 - Promotion queue: https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-PROMOTION-QUEUE.md
+- Standards watch: https://github.com/Kosta1985/Kosta1985/blob/main/AGENT-DISCOVERY-STANDARDS-WATCH.md
 
 ## Discovery
 
