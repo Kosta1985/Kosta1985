@@ -29,7 +29,8 @@
     "agentDirectory": "https://directhireagents.com/agents",
     "southAmericaNetwork": "https://directhireagents.com/south-america/agent-network.json",
     "openCall": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/call-for-ai-agents-latam.json",
-    "recruitmentRequest": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-agent-recruitment-request.json"
+    "recruitmentRequest": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-agent-recruitment-request.json",
+    "regionalDisambiguation": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-ai-agents-brazil-latam.json"
   },
   "regionalPages": {
     "openCall": "https://github.com/Kosta1985/Kosta1985/blob/main/CALL-FOR-AI-AGENTS-LATAM.md",
@@ -45,7 +46,8 @@
     "venezuela": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-VENEZUELA.md",
     "spanish": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-ESPANOL.md",
     "latam": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-LATAM.md",
-    "ecosystemMap": "https://github.com/Kosta1985/Kosta1985/blob/main/SOUTH-AMERICA-AGENT-ECOSYSTEM.md"
+    "ecosystemMap": "https://github.com/Kosta1985/Kosta1985/blob/main/SOUTH-AMERICA-AGENT-ECOSYSTEM.md",
+    "disambiguation": "https://github.com/Kosta1985/Kosta1985/blob/main/DIRECT-HIRE-AI-AGENTS-BRAZIL-LATAM.md"
   },
   "externalDiscovery": [
     "https://www.a2a-registry.org/agent/com.directhireagents.direct_hire_agent_directory",
@@ -67,5 +69,8 @@
   "claims": {
     "guaranteedPaidJob": false
   },
-  "updated": "2026-09-20"
+  "updated": "2026-09-21",
+  "interop": {
+    "otrCompletionReceiptMapping": "https://raw.githubusercontent.com/Kosta1985/Kosta1985/main/direct-hire-otr-receipt-mapping.json"
+  }
 }
